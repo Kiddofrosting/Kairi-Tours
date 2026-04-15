@@ -1,0 +1,2386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kairi Tours & Safaris | Kenya's Oldest Tour Agency Since 1984</title>
+<meta name="description" content="Kairi Tours and Safaris — Kenya's oldest indigenously owned tour agency since 1984. JKIA Airport office. Budget, mid-range & luxury safaris to Masai Mara, Amboseli, Serengeti, Diani Beach and beyond. Call +254 727 827 007.">
+<meta name="keywords" content="Kenya safari, Masai Mara safari, Amboseli safari, Kenya tour packages, affordable safari Kenya, luxury safari, Kairi Tours, JKIA airport tours">
+<meta property="og:title" content="Kairi Tours & Safaris | Africa's Premier Safari Company Since 1984">
+<meta property="og:description" content="Kenya's oldest indigenously owned tour agency. 40+ years of unforgettable East African adventures.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200&q=80">
+<link rel="canonical" href="https://kairi.co.ke">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<style>
+/* ═══════════════════════════════════════════════════════════════════
+   KAIRI TOURS & SAFARIS — Production v2.0
+   Design: Warm African Luxury — deep forest, gold, parchment
+   ═══════════════════════════════════════════════════════════════════ */
+:root{
+  --forest:#1A2E1A;
+  --forest2:#243524;
+  --forest3:#2F4A2F;
+  --gold:#C9A84C;
+  --gold2:#E8C96A;
+  --gold3:#9A7530;
+  --clay:#D4825A;
+  --cream:#F7F2EA;
+  --cream2:#EDE5D5;
+  --parch:#FAF6EF;
+  --ink:#0F1A0F;
+  --muted:#7A8C6A;
+  --muted2:#9FAF8F;
+  --white:#FFFFFF;
+
+  --font-serif:'Cormorant Garamond',Georgia,serif;
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-body:'Outfit',system-ui,sans-serif;
+
+  --ease:cubic-bezier(0.4,0,0.2,1);
+  --t3:all 0.3s var(--ease);
+  --t5:all 0.5s var(--ease);
+
+  --shadow-sm:0 2px 8px rgba(15,26,15,0.12);
+  --shadow-md:0 8px 32px rgba(15,26,15,0.18);
+  --shadow-lg:0 20px 60px rgba(15,26,15,0.3);
+  --shadow-gold:0 8px 32px rgba(201,168,76,0.25);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);background:var(--parch);color:var(--ink);overflow-x:hidden;line-height:1.6}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--forest)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+/* ═══ TYPOGRAPHY ═══ */
+h1,h2,h3{font-family:var(--font-display);line-height:1.1;font-weight:700}
+h4,h5{font-family:var(--font-body);font-weight:600}
+
+/* ═══ UTILITIES ═══ */
+.gold-text{color:var(--gold)}
+.cream-text{color:var(--cream)}
+.serif{font-family:var(--font-serif)}
+.section-pad{padding:100px 0}
+.section-pad-sm{padding:64px 0}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.container-wide{max-width:1400px;margin:0 auto;padding:0 24px}
+
+/* Section Labels */
+.eyebrow{font-family:var(--font-body);font-size:11px;letter-spacing:4px;text-transform:uppercase;font-weight:600;color:var(--gold);display:block;margin-bottom:14px}
+.section-h{font-size:clamp(2rem,4vw,3.4rem);line-height:1.08;color:var(--forest)}
+.section-h .em{color:var(--gold);font-style:italic}
+.section-h.light{color:var(--cream)}
+.section-sub{font-size:15px;color:var(--muted);line-height:1.8;max-width:560px}
+.section-sub.light{color:rgba(247,242,234,0.7)}
+
+/* Divider */
+.divider{width:48px;height:2px;background:var(--gold);margin:20px 0}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-body);font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;padding:14px 30px;border-radius:1px;transition:var(--t3);position:relative;overflow:hidden}
+.btn::after{content:'';position:absolute;inset:0;background:rgba(255,255,255,0);transition:var(--t3)}
+.btn:hover::after{background:rgba(255,255,255,0.08)}
+.btn-primary{background:var(--gold);color:var(--forest)}
+.btn-primary:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:var(--shadow-gold)}
+.btn-outline{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.btn-outline:hover{background:var(--gold);color:var(--forest)}
+.btn-forest{background:var(--forest);color:var(--cream)}
+.btn-forest:hover{background:var(--forest2);transform:translateY(-2px)}
+.btn-outline-cream{background:transparent;color:var(--cream);border:1px solid rgba(247,242,234,0.5)}
+.btn-outline-cream:hover{background:rgba(247,242,234,0.1);border-color:var(--cream)}
+.btn-sm{padding:10px 22px;font-size:11px}
+.btn-lg{padding:17px 40px;font-size:13px}
+
+/* ═══ NAVBAR ═══ */
+#nav{position:fixed;top:0;left:0;width:100%;z-index:900;transition:var(--t3);padding:22px 0}
+#nav.solid{background:rgba(26,46,26,0.97);backdrop-filter:blur(24px);padding:14px 0;border-bottom:1px solid rgba(201,168,76,0.12)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--font-display);font-size:1.65rem;font-weight:900;color:var(--gold);text-decoration:none;letter-spacing:0.5px;display:flex;align-items:center;gap:3px}
+.nav-logo span{color:var(--cream);font-weight:400;font-style:italic}
+.nav-menu{display:flex;align-items:center;gap:4px;list-style:none}
+.nav-menu a{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;color:rgba(247,242,234,0.8);text-decoration:none;padding:8px 14px;transition:var(--t3);position:relative}
+.nav-menu a::after{content:'';position:absolute;bottom:4px;left:14px;right:14px;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:var(--t3)}
+.nav-menu a:hover{color:var(--gold)}
+.nav-menu a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav-cta-group{display:flex;align-items:center;gap:10px}
+.nav-phone{font-size:12px;color:rgba(247,242,234,0.6);text-decoration:none;transition:var(--t3);display:flex;align-items:center;gap:6px}
+.nav-phone:hover{color:var(--gold)}
+.hamburger{display:none;background:none;border:1px solid rgba(201,168,76,0.4);color:var(--gold);width:38px;height:38px;border-radius:2px;align-items:center;justify-content:center;cursor:pointer;font-size:16px}
+
+/* Mobile Nav */
+.mobile-nav{position:fixed;top:0;right:-100%;width:300px;height:100vh;background:var(--forest);z-index:1000;transition:var(--t5);padding:80px 32px 32px;border-left:1px solid rgba(201,168,76,0.15)}
+.mobile-nav.open{right:0;box-shadow:-20px 0 60px rgba(0,0,0,0.5)}
+.mobile-nav a{display:block;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:rgba(247,242,234,0.8);text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(247,242,234,0.07);transition:var(--t3)}
+.mobile-nav a:hover{color:var(--gold);padding-left:8px}
+.mobile-nav-close{position:absolute;top:24px;right:24px;background:none;border:none;color:var(--gold);font-size:22px;cursor:pointer}
+.nav-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:999;opacity:0;pointer-events:none;transition:var(--t3)}
+.nav-overlay.show{opacity:1;pointer-events:all}
+
+/* ═══ HERO ═══ */
+#hero{height:100vh;min-height:680px;position:relative;display:flex;align-items:center;overflow:hidden}
+.hero-slides{position:absolute;inset:0}
+.hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.5s ease;animation:heroSlide 10s ease-in-out infinite alternate}
+.hero-slide.active{opacity:1}
+@keyframes heroSlide{0%{transform:scale(1)}100%{transform:scale(1.07)}}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(15,26,15,0.78) 0%,rgba(26,46,26,0.5) 55%,rgba(15,26,15,0.2) 100%)}
+.hero-content{position:relative;z-index:2;max-width:700px}
+.hero-kicker{display:inline-flex;align-items:center;gap:10px;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.35);padding:8px 18px;border-radius:40px;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:28px;animation:fadeUp 1s 0.1s both}
+.hero-title{font-size:clamp(3.2rem,7.5vw,6.8rem);font-weight:900;line-height:0.92;color:var(--cream);animation:fadeUp 1s 0.25s both;opacity:0}
+.hero-title .line-gold{display:block;color:var(--gold);font-style:italic}
+.hero-title .line-small{display:block;font-size:clamp(1.4rem,3vw,2.8rem);font-weight:400;font-style:italic;color:rgba(247,242,234,0.7);margin-top:6px}
+.hero-desc{font-size:1.05rem;color:rgba(247,242,234,0.72);line-height:1.75;max-width:480px;margin:26px 0 38px;animation:fadeUp 1s 0.4s both;opacity:0}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;animation:fadeUp 1s 0.55s both;opacity:0}
+.hero-stats{position:absolute;bottom:0;left:0;right:0;z-index:2;background:linear-gradient(to top,rgba(15,26,15,0.9) 0%,transparent 100%);padding:40px 0 0}
+.hero-stats-inner{display:flex;gap:0;border-top:1px solid rgba(201,168,76,0.15)}
+.hstat{flex:1;padding:22px 28px;border-right:1px solid rgba(201,168,76,0.1);animation:fadeUp 1s var(--delay,0.7s) both;opacity:0}
+.hstat:last-child{border-right:none}
+.hstat-num{font-family:var(--font-display);font-size:2rem;font-weight:900;color:var(--gold);line-height:1}
+.hstat-label{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(247,242,234,0.5);margin-top:5px}
+.hero-scroll{position:absolute;bottom:130px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;animation:fadeIn 1s 1.2s both;opacity:0}
+.scroll-text{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(247,242,234,0.4)}
+.scroll-bar{width:1px;height:50px;background:linear-gradient(to bottom,rgba(201,168,76,0.8),transparent);animation:scrollAnim 2s ease-in-out infinite}
+@keyframes scrollAnim{0%,100%{opacity:0.3;transform:scaleY(0.6)}50%{opacity:1;transform:scaleY(1)}}
+
+/* Hero slide indicators */
+.hero-dots{position:absolute;right:40px;top:50%;transform:translateY(-50%);z-index:3;display:flex;flex-direction:column;gap:10px}
+.hdot{width:4px;height:24px;background:rgba(247,242,234,0.25);border-radius:2px;cursor:pointer;transition:var(--t3)}
+.hdot.active{background:var(--gold);height:40px}
+
+/* ═══ TICKER ═══ */
+#ticker{background:var(--gold);padding:11px 0;overflow:hidden}
+.ticker-track{display:flex;gap:60px;white-space:nowrap;animation:tick 35s linear infinite}
+.ticker-item{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--forest);display:flex;align-items:center;gap:16px}
+.ticker-sep{font-size:16px;opacity:0.4}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ═══ TRUST BAR ═══ */
+#trust{background:var(--forest);padding:50px 0;border-bottom:1px solid rgba(201,168,76,0.1)}
+.trust-item{display:flex;align-items:center;gap:16px;padding:0 24px;border-right:1px solid rgba(201,168,76,0.1)}
+.trust-item:last-child{border-right:none}
+.trust-icon{width:48px;height:48px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--gold);flex-shrink:0}
+.trust-label{font-size:13px;font-weight:600;color:var(--cream)}
+.trust-sub{font-size:11px;color:var(--muted2);margin-top:2px}
+
+/* ═══ ABOUT ═══ */
+#about{background:var(--parch)}
+.about-img-col{position:relative}
+.about-main-img{width:100%;height:600px;object-fit:cover;border-radius:2px}
+.about-float-img{position:absolute;bottom:-36px;right:-28px;width:220px;height:280px;object-fit:cover;border-radius:2px;border:6px solid var(--parch);box-shadow:var(--shadow-lg)}
+.about-year-badge{position:absolute;top:30px;left:-20px;background:var(--gold);color:var(--forest);padding:18px 22px;text-align:center;font-family:var(--font-display);font-weight:900}
+.about-year-badge .yr{font-size:2.6rem;line-height:1;display:block}
+.about-year-badge .yrlabel{font-size:9px;letter-spacing:2px;text-transform:uppercase;font-family:var(--font-body);font-weight:700;display:block}
+.about-text-col{padding-left:48px}
+.about-check{display:flex;align-items:flex-start;gap:12px;margin-bottom:18px}
+.about-check-icon{width:22px;height:22px;background:rgba(201,168,76,0.15);border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.about-check-icon i{font-size:11px;color:var(--gold)}
+.about-check-text{font-size:14px;color:var(--muted);line-height:1.6}
+.cert-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.cert-pill{display:inline-flex;align-items:center;gap:7px;background:var(--forest);color:var(--cream2);padding:8px 16px;font-size:11px;letter-spacing:1px;font-weight:500;border-radius:2px}
+.cert-pill i{color:var(--gold);font-size:12px}
+
+/* ═══ PACKAGES ═══ */
+#packages{background:var(--forest);position:relative;overflow:hidden}
+#packages::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(201,168,76,0.04) 0%,transparent 70%)}
+.pkg-filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:48px}
+.pkg-filter{background:rgba(247,242,234,0.06);border:1px solid rgba(247,242,234,0.1);color:rgba(247,242,234,0.55);padding:8px 22px;border-radius:40px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;font-family:var(--font-body);transition:var(--t3)}
+.pkg-filter.active,.pkg-filter:hover{background:var(--gold);border-color:var(--gold);color:var(--forest)}
+
+.pkg-card{background:var(--forest2);border:1px solid rgba(247,242,234,0.06);border-radius:2px;overflow:hidden;transition:var(--t5);height:100%;display:flex;flex-direction:column;cursor:pointer}
+.pkg-card:hover{transform:translateY(-10px);border-color:rgba(201,168,76,0.25);box-shadow:0 24px 64px rgba(0,0,0,0.5)}
+.pkg-img-wrap{position:relative;overflow:hidden;height:240px}
+.pkg-img{width:100%;height:100%;object-fit:cover;transition:var(--t5)}
+.pkg-card:hover .pkg-img{transform:scale(1.07)}
+.pkg-tier{position:absolute;top:14px;left:14px;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700;padding:5px 12px;border-radius:1px}
+.tier-budget{background:rgba(47,74,47,0.95);color:var(--gold2);border:1px solid rgba(201,168,76,0.3)}
+.tier-midrange{background:rgba(201,168,76,0.92);color:var(--forest)}
+.tier-luxury{background:rgba(15,26,15,0.9);color:var(--gold);border:1px solid var(--gold3)}
+.tier-beach{background:rgba(52,130,180,0.9);color:#fff}
+.tier-trekking{background:rgba(139,90,60,0.9);color:#fff}
+.pkg-dur{position:absolute;top:14px;right:14px;background:rgba(15,26,15,0.85);backdrop-filter:blur(8px);color:var(--cream);padding:5px 12px;font-size:10px;letter-spacing:1px;border-radius:1px}
+.pkg-wish{position:absolute;bottom:14px;right:14px;width:34px;height:34px;background:rgba(15,26,15,0.7);backdrop-filter:blur(8px);border:1px solid rgba(247,242,234,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--t3);color:rgba(247,242,234,0.5);font-size:14px}
+.pkg-wish:hover,.pkg-wish.active{background:rgba(201,168,76,0.3);color:var(--gold);border-color:var(--gold)}
+.pkg-body{padding:24px;flex:1;display:flex;flex-direction:column}
+.pkg-location{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:5px}
+.pkg-name{font-size:1.15rem;font-weight:700;color:var(--cream);margin-bottom:10px;line-height:1.3;font-family:var(--font-serif)}
+.pkg-desc{font-size:12.5px;color:rgba(247,242,234,0.55);line-height:1.7;margin-bottom:18px;flex:1}
+.pkg-feats{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.pkg-feat{font-size:10.5px;color:rgba(247,242,234,0.55);display:flex;align-items:center;gap:4px}
+.pkg-feat i{color:var(--gold3);font-size:9px}
+.pkg-footer{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid rgba(247,242,234,0.07)}
+.pkg-from{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(247,242,234,0.35);display:block}
+.pkg-price{font-size:1.5rem;font-weight:700;color:var(--gold);font-family:var(--font-display);line-height:1}
+.pkg-per{font-size:10px;color:rgba(247,242,234,0.35)}
+
+/* ═══ DESTINATIONS ═══ */
+#destinations{background:var(--cream2)}
+.dest-mosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:280px 280px;gap:10px}
+.dest-tile{position:relative;overflow:hidden;border-radius:2px;cursor:pointer}
+.dest-tile.lg{grid-column:span 5;grid-row:span 2}
+.dest-tile.md{grid-column:span 4;grid-row:span 1}
+.dest-tile.sm{grid-column:span 3;grid-row:span 1}
+.dest-tile.wide{grid-column:span 7;grid-row:span 1}
+.dest-tile img{width:100%;height:100%;object-fit:cover;transition:var(--t5)}
+.dest-tile:hover img{transform:scale(1.08)}
+.dest-veil{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,26,15,0.92) 0%,rgba(15,26,15,0.2) 55%,transparent 100%);transition:var(--t3)}
+.dest-tile:hover .dest-veil{background:linear-gradient(to top,rgba(15,26,15,0.97) 0%,rgba(15,26,15,0.5) 55%,rgba(15,26,15,0.1) 100%)}
+.dest-info{position:absolute;bottom:0;left:0;right:0;padding:22px 20px}
+.dest-ctry{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:5px}
+.dest-name{font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--cream);line-height:1.15}
+.dest-tile.lg .dest-name{font-size:1.8rem}
+.dest-count{font-size:11px;color:rgba(247,242,234,0.55);margin-top:4px}
+.dest-arrow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);width:48px;height:48px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--forest);transition:var(--t3);opacity:0}
+.dest-tile:hover .dest-arrow{transform:translate(-50%,-50%) scale(1);opacity:1}
+
+/* ═══ EXPERIENCES ═══ */
+#experiences{background:var(--parch);position:relative}
+.exp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.exp-card{background:var(--white);border:1px solid rgba(26,46,26,0.07);padding:36px 28px;border-radius:2px;transition:var(--t3);position:relative;overflow:hidden;cursor:default}
+.exp-card::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:var(--t3)}
+.exp-card:hover{box-shadow:var(--shadow-md);transform:translateY(-6px);border-color:rgba(201,168,76,0.2)}
+.exp-card:hover::after{transform:scaleX(1)}
+.exp-icon-wrap{width:54px;height:54px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--gold);margin-bottom:22px;transition:var(--t3)}
+.exp-card:hover .exp-icon-wrap{background:var(--gold);color:var(--forest)}
+.exp-title{font-size:1.1rem;font-weight:700;color:var(--forest);margin-bottom:10px;font-family:var(--font-serif)}
+.exp-desc{font-size:13px;color:var(--muted);line-height:1.75}
+.exp-img-row{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.exp-img-card{position:relative;height:220px;overflow:hidden;border-radius:2px}
+.exp-img-card img{width:100%;height:100%;object-fit:cover;transition:var(--t5)}
+.exp-img-card:hover img{transform:scale(1.05)}
+.exp-img-label{position:absolute;bottom:14px;left:14px;background:rgba(15,26,15,0.7);backdrop-filter:blur(6px);padding:6px 14px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cream);font-weight:500}
+
+/* ═══ GALLERY ═══ */
+#gallery{background:var(--forest);padding:80px 0}
+.gallery-swiper{overflow:hidden}
+.gallery-swiper .swiper-slide{height:380px;border-radius:2px;overflow:hidden;position:relative}
+.gallery-swiper .swiper-slide img{width:100%;height:100%;object-fit:cover;transition:var(--t5)}
+.gallery-swiper .swiper-slide:hover img{transform:scale(1.04)}
+.gallery-caption{position:absolute;bottom:0;left:0;right:0;padding:18px;background:linear-gradient(to top,rgba(15,26,15,0.9) 0%,transparent 100%);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(247,242,234,0.7);font-weight:500}
+
+/* ═══ WHY KAIRI ═══ */
+#why{background:var(--cream2)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(26,46,26,0.07)}
+.why-card{background:var(--parch);padding:48px 36px;transition:var(--t3);cursor:default}
+.why-card:hover{background:var(--forest);color:var(--cream)}
+.why-num{font-family:var(--font-display);font-size:3.5rem;font-weight:900;color:rgba(201,168,76,0.15);line-height:1;margin-bottom:12px;transition:var(--t3)}
+.why-card:hover .why-num{color:rgba(201,168,76,0.25)}
+.why-title{font-size:1.1rem;font-weight:700;color:var(--forest);margin-bottom:10px;font-family:var(--font-serif);transition:var(--t3)}
+.why-card:hover .why-title{color:var(--gold)}
+.why-desc{font-size:13px;color:var(--muted);line-height:1.75;transition:var(--t3)}
+.why-card:hover .why-desc{color:rgba(247,242,234,0.65)}
+
+/* ═══ TESTIMONIALS ═══ */
+#testimonials{background:var(--forest);position:relative;overflow:hidden}
+#testimonials::after{content:'"';position:absolute;top:-40px;right:60px;font-size:30rem;font-family:var(--font-serif);color:rgba(201,168,76,0.04);line-height:1;pointer-events:none}
+.testi-card{background:rgba(247,242,234,0.04);border:1px solid rgba(247,242,234,0.07);padding:36px;border-radius:2px;height:100%;transition:var(--t3)}
+.testi-card:hover{border-color:rgba(201,168,76,0.2);background:rgba(247,242,234,0.06)}
+.testi-stars{color:var(--gold);font-size:13px;letter-spacing:3px;margin-bottom:16px}
+.testi-text{font-family:var(--font-serif);font-style:italic;font-size:1.05rem;color:rgba(247,242,234,0.85);line-height:1.75;margin-bottom:24px}
+.testi-author{display:flex;align-items:center;gap:14px}
+.testi-avatar{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold3));display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--forest);font-size:15px;font-family:var(--font-display)}
+.testi-name{font-weight:600;color:var(--cream);font-size:13.5px}
+.testi-origin{font-size:11px;color:var(--muted2);margin-top:2px;letter-spacing:0.5px}
+.testi-safari{font-size:10px;color:var(--gold3);margin-top:2px;letter-spacing:1px;text-transform:uppercase}
+.testi-nav-dots{display:flex;gap:8px;justify-content:center;margin-top:40px}
+.testi-dot{width:28px;height:3px;background:rgba(247,242,234,0.15);border-radius:2px;cursor:pointer;transition:var(--t3)}
+.testi-dot.active{width:44px;background:var(--gold)}
+
+/* ═══ BOOKING ═══ */
+#booking{background:var(--parch);position:relative}
+.booking-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0.06}
+.booking-wrap{background:var(--white);border:1px solid rgba(26,46,26,0.08);padding:50px 48px;border-radius:2px;position:relative;z-index:1;box-shadow:var(--shadow-md)}
+.f-label{font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:8px;font-weight:600}
+.f-input{background:var(--parch);border:1px solid rgba(26,46,26,0.12);color:var(--ink);padding:13px 16px;border-radius:1px;font-family:var(--font-body);font-size:13.5px;width:100%;transition:var(--t3)}
+.f-input:focus{outline:none;border-color:var(--gold);background:rgba(201,168,76,0.03);box-shadow:0 0 0 3px rgba(201,168,76,0.08)}
+.f-input::placeholder{color:rgba(15,26,15,0.3)}
+.f-select{background:var(--parch) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%231A2E1A' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") no-repeat right 14px center/13px;border:1px solid rgba(26,46,26,0.12);color:var(--ink);padding:13px 16px;border-radius:1px;font-family:var(--font-body);font-size:13.5px;width:100%;-webkit-appearance:none;cursor:pointer;transition:var(--t3)}
+.f-select:focus{outline:none;border-color:var(--gold)}
+.f-select option{background:var(--white);color:var(--ink)}
+.booking-info-card{background:var(--forest);padding:36px;border-radius:2px;height:100%}
+.booking-info-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid rgba(247,242,234,0.07)}
+.booking-info-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.binfo-icon{width:40px;height:40px;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold);font-size:16px}
+.binfo-title{font-size:13px;font-weight:600;color:var(--cream);margin-bottom:3px}
+.binfo-text{font-size:12px;color:var(--muted2);line-height:1.6}
+
+/* ═══ BLOG ═══ */
+#blog{background:var(--cream2)}
+.blog-card{background:var(--white);border-radius:2px;overflow:hidden;transition:var(--t3);box-shadow:var(--shadow-sm)}
+.blog-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.blog-img-wrap{height:210px;overflow:hidden;position:relative}
+.blog-img-wrap img{width:100%;height:100%;object-fit:cover;transition:var(--t5)}
+.blog-card:hover .blog-img-wrap img{transform:scale(1.05)}
+.blog-cat-label{position:absolute;top:14px;left:14px;background:var(--gold);color:var(--forest);font-size:9px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700;padding:5px 12px}
+.blog-body{padding:24px}
+.blog-title{font-family:var(--font-serif);font-size:1.1rem;font-weight:600;color:var(--forest);line-height:1.4;margin-bottom:10px}
+.blog-excerpt{font-size:12.5px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+.blog-meta{font-size:11px;color:var(--muted2);display:flex;align-items:center;gap:14px}
+.blog-meta span{display:flex;align-items:center;gap:5px}
+.blog-readmore{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:6px;margin-top:14px;transition:var(--t3)}
+.blog-readmore:hover{gap:10px;color:var(--gold3)}
+
+/* ═══ NEWSLETTER ═══ */
+#newsletter{background:var(--gold);padding:80px 0}
+.nl-title{font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:900;color:var(--forest);line-height:1.05}
+.nl-sub{font-size:14px;color:rgba(26,46,26,0.65);margin-top:10px}
+.nl-input{background:rgba(26,46,26,0.1);border:2px solid rgba(26,46,26,0.2);color:var(--forest);padding:15px 22px;font-family:var(--font-body);font-size:14px;width:100%;border-radius:1px}
+.nl-input::placeholder{color:rgba(26,46,26,0.4)}
+.nl-input:focus{outline:none;border-color:var(--forest);background:rgba(26,46,26,0.15)}
+.nl-btn{background:var(--forest);color:var(--gold);font-family:var(--font-body);font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;padding:15px 32px;border:none;border-radius:1px;cursor:pointer;white-space:nowrap;transition:var(--t3)}
+.nl-btn:hover{background:var(--forest2);transform:translateY(-2px)}
+
+/* ═══ FOOTER ═══ */
+#footer{background:var(--ink)}
+.footer-top{padding:70px 0 50px;border-bottom:1px solid rgba(247,242,234,0.06)}
+.footer-logo{font-family:var(--font-display);font-size:1.8rem;font-weight:900;color:var(--gold)}
+.footer-logo span{color:var(--cream);font-weight:400;font-style:italic}
+.footer-tagline{font-size:13px;color:var(--muted);line-height:1.7;margin-top:12px;max-width:280px}
+.footer-social{display:flex;gap:8px;margin-top:24px}
+.footer-social a{width:38px;height:38px;border:1px solid rgba(247,242,234,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;text-decoration:none;transition:var(--t3)}
+.footer-social a:hover{background:var(--gold);border-color:var(--gold);color:var(--forest)}
+.footer-head{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:22px}
+.footer-link{display:block;color:var(--muted);font-size:13px;padding:5px 0;text-decoration:none;transition:var(--t3)}
+.footer-link:hover{color:var(--gold);padding-left:6px}
+.footer-contact-item{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px}
+.footer-ci-icon{color:var(--gold);font-size:14px;margin-top:2px;flex-shrink:0}
+.footer-ci-text{font-size:12.5px;color:var(--muted);line-height:1.6}
+.footer-ci-text a{color:var(--muted);text-decoration:none;transition:var(--t3)}
+.footer-ci-text a:hover{color:var(--gold)}
+.footer-bottom{padding:22px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-copy{font-size:12px;color:rgba(122,140,106,0.5)}
+.footer-certs{display:flex;gap:10px;flex-wrap:wrap}
+.footer-cert{background:rgba(247,242,234,0.04);border:1px solid rgba(247,242,234,0.07);padding:5px 12px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(122,140,106,0.7)}
+
+/* ═══ FLOATING WHATSAPP ═══ */
+.wa-float{position:fixed;bottom:30px;right:30px;z-index:800;width:54px;height:54px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;color:#fff;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:var(--t3);animation:pulse 3s ease-in-out infinite}
+.wa-float:hover{transform:scale(1.1);box-shadow:0 8px 30px rgba(37,211,102,0.5)}
+@keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.4)}50%{box-shadow:0 4px 30px rgba(37,211,102,0.6),0 0 0 8px rgba(37,211,102,0.08)}}
+
+/* ═══ NOTIFICATION ═══ */
+#notif{position:fixed;bottom:90px;right:24px;z-index:2000;background:var(--forest);border:1px solid rgba(201,168,76,0.2);padding:16px 22px;border-radius:2px;display:flex;align-items:center;gap:12px;min-width:280px;box-shadow:var(--shadow-lg);transform:translateX(120%);transition:var(--t3)}
+#notif.show{transform:translateX(0)}
+#notif.success{border-left:3px solid #4CAF50}
+#notif.error{border-left:3px solid #e74c3c}
+#notif.info{border-left:3px solid var(--gold)}
+.notif-icon{font-size:18px;flex-shrink:0}
+.notif-text{font-size:13px;color:var(--cream);flex:1}
+.notif-close{background:none;border:none;color:var(--muted);cursor:pointer;font-size:14px;padding:0;margin-left:8px}
+
+/* ═══ SCROLL ANIMATIONS ═══ */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+.d1{transition-delay:0.1s}.d2{transition-delay:0.2s}.d3{transition-delay:0.3s}.d4{transition-delay:0.4s}.d5{transition-delay:0.5s}.d6{transition-delay:0.6s}
+
+/* ═══ KEYFRAMES ═══ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* ═══ GRID ROW UTILITY ═══ */
+.row{display:flex;flex-wrap:wrap;margin:0 -12px}
+.col{flex:1;padding:0 12px}
+.col-1{flex:0 0 8.33%;max-width:8.33%;padding:0 12px}
+.col-2{flex:0 0 16.66%;max-width:16.66%;padding:0 12px}
+.col-3{flex:0 0 25%;max-width:25%;padding:0 12px}
+.col-4{flex:0 0 33.33%;max-width:33.33%;padding:0 12px}
+.col-5{flex:0 0 41.66%;max-width:41.66%;padding:0 12px}
+.col-6{flex:0 0 50%;max-width:50%;padding:0 12px}
+.col-7{flex:0 0 58.33%;max-width:58.33%;padding:0 12px}
+.col-8{flex:0 0 66.66%;max-width:66.66%;padding:0 12px}
+.col-9{flex:0 0 75%;max-width:75%;padding:0 12px}
+.col-12{flex:0 0 100%;max-width:100%;padding:0 12px}
+.g-4{gap:24px;margin:0}
+.g-4>.col,.g-4>[class^="col-"]{padding:0}
+.mt-2{margin-top:8px}.mt-3{margin-top:12px}.mt-4{margin-top:16px}.mt-5{margin-top:20px}
+.mb-2{margin-bottom:8px}.mb-3{margin-bottom:12px}.mb-4{margin-bottom:16px}.mb-5{margin-bottom:20px}
+.text-center{text-align:center}
+.d-flex{display:flex}.align-center{align-items:center}.justify-between{justify-content:space-between}.justify-center{justify-content:center}.flex-wrap{flex-wrap:wrap}
+
+/* ═══ ADMIN SYSTEM ═══ */
+#loginModal{display:none;position:fixed;inset:0;z-index:10000;background:rgba(15,26,15,0.92);backdrop-filter:blur(12px);align-items:center;justify-content:center}
+#loginModal.show{display:flex}
+.login-box{background:var(--forest2);border:1px solid rgba(201,168,76,0.2);padding:48px;width:min(400px,90vw);border-radius:2px;box-shadow:var(--shadow-lg)}
+.login-logo{font-family:var(--font-display);font-size:1.8rem;font-weight:900;color:var(--gold);text-align:center;margin-bottom:6px}
+.login-sub{font-size:12px;text-align:center;color:var(--muted2);letter-spacing:2px;text-transform:uppercase;margin-bottom:32px}
+.login-input{background:rgba(247,242,234,0.05);border:1px solid rgba(247,242,234,0.1);color:var(--cream);padding:14px 16px;border-radius:1px;font-family:var(--font-body);font-size:14px;width:100%;transition:var(--t3);margin-bottom:14px}
+.login-input:focus{outline:none;border-color:var(--gold);background:rgba(201,168,76,0.05)}
+.login-input::placeholder{color:rgba(247,242,234,0.25)}
+.login-hint{font-size:11px;color:var(--muted);text-align:center;margin-top:14px}
+
+/* Admin Modal Full Screen */
+#adminPanel{display:none;position:fixed;inset:0;z-index:9000;background:var(--ink)}
+#adminPanel.show{display:flex}
+.admin-sidebar{width:260px;background:var(--forest);border-right:1px solid rgba(201,168,76,0.1);display:flex;flex-direction:column;flex-shrink:0;overflow-y:auto}
+.admin-brand{padding:24px 22px;border-bottom:1px solid rgba(201,168,76,0.1);display:flex;align-items:center;gap:10px}
+.admin-brand-name{font-family:var(--font-display);font-size:1.1rem;font-weight:900;color:var(--gold)}
+.admin-brand-sub{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted2);margin-top:2px}
+.admin-nav-section{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);padding:20px 22px 8px;font-weight:700}
+.admin-nav-item{display:flex;align-items:center;gap:10px;padding:11px 22px;font-size:13px;color:rgba(247,242,234,0.65);cursor:pointer;transition:var(--t3);text-decoration:none;border-left:2px solid transparent;font-weight:500}
+.admin-nav-item:hover,.admin-nav-item.active{background:rgba(201,168,76,0.08);color:var(--gold);border-left-color:var(--gold)}
+.admin-nav-item i{font-size:15px;width:18px;text-align:center}
+.admin-main{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.admin-topbar{background:var(--forest2);border-bottom:1px solid rgba(201,168,76,0.08);padding:16px 28px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.admin-page-title{font-size:15px;font-weight:700;color:var(--cream)}
+.admin-content{flex:1;overflow-y:auto;padding:28px}
+.admin-section{display:none}
+.admin-section.active{display:block}
+
+/* Admin Cards */
+.a-stat{background:var(--forest2);border:1px solid rgba(247,242,234,0.06);padding:22px 24px;border-radius:2px}
+.a-stat-num{font-family:var(--font-display);font-size:2rem;font-weight:900;color:var(--gold);line-height:1}
+.a-stat-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted2);margin-top:6px}
+.a-stat-change{font-size:11px;color:var(--muted2);margin-top:8px;display:flex;align-items:center;gap:4px}
+.a-stat-change.up{color:#4CAF50}
+.a-stat-change.down{color:#e74c3c}
+
+.a-card{background:var(--forest2);border:1px solid rgba(247,242,234,0.06);padding:22px;border-radius:2px}
+.a-card-title{font-size:13px;font-weight:600;color:var(--cream);margin-bottom:16px}
+
+/* Admin Table */
+.a-table{width:100%;border-collapse:collapse;font-size:12.5px}
+.a-table thead tr{border-bottom:1px solid rgba(201,168,76,0.15)}
+.a-table th{padding:10px 14px;text-align:left;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted2);font-weight:600}
+.a-table td{padding:13px 14px;border-bottom:1px solid rgba(247,242,234,0.04);color:rgba(247,242,234,0.75);vertical-align:middle}
+.a-table tr:hover td{background:rgba(201,168,76,0.03)}
+.status-badge{font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;padding:4px 10px;border-radius:1px}
+.s-confirmed{background:rgba(74,175,80,0.15);color:#4CAF50}
+.s-pending{background:rgba(255,193,7,0.15);color:#FFC107}
+.s-cancelled{background:rgba(231,76,60,0.15);color:#e74c3c}
+
+/* Admin Form Inputs */
+.a-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted2);display:block;margin-bottom:7px;font-weight:600}
+.a-input{background:rgba(247,242,234,0.05);border:1px solid rgba(247,242,234,0.1);color:var(--cream);padding:12px 14px;border-radius:1px;font-family:var(--font-body);font-size:13px;width:100%;transition:var(--t3)}
+.a-input:focus{outline:none;border-color:var(--gold);background:rgba(201,168,76,0.05)}
+.a-input::placeholder{color:rgba(247,242,234,0.2)}
+.a-select{background:rgba(247,242,234,0.05) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23C9A84C' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") no-repeat right 14px center/13px;border:1px solid rgba(247,242,234,0.1);color:var(--cream);padding:12px 14px;border-radius:1px;font-family:var(--font-body);font-size:13px;width:100%;-webkit-appearance:none;cursor:pointer;transition:var(--t3)}
+.a-select:focus{outline:none;border-color:var(--gold)}
+.a-select option{background:var(--forest2);color:var(--cream)}
+.a-textarea{background:rgba(247,242,234,0.05);border:1px solid rgba(247,242,234,0.1);color:var(--cream);padding:12px 14px;border-radius:1px;font-family:var(--font-body);font-size:13px;width:100%;resize:vertical;transition:var(--t3);min-height:80px}
+.a-textarea:focus{outline:none;border-color:var(--gold)}
+
+/* Admin Buttons */
+.a-btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-body);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;padding:9px 18px;border:1px solid transparent;border-radius:1px;cursor:pointer;transition:var(--t3)}
+.a-btn-gold{background:var(--gold);color:var(--forest);border-color:var(--gold)}
+.a-btn-gold:hover{background:var(--gold2)}
+.a-btn-outline{background:transparent;color:var(--cream);border-color:rgba(247,242,234,0.2)}
+.a-btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.a-btn-danger{background:rgba(231,76,60,0.15);color:#e74c3c;border-color:rgba(231,76,60,0.25)}
+.a-btn-danger:hover{background:rgba(231,76,60,0.25)}
+.a-btn-success{background:rgba(74,175,80,0.15);color:#4CAF50;border-color:rgba(74,175,80,0.25)}
+.a-btn-success:hover{background:rgba(74,175,80,0.25)}
+.a-btn-sm{padding:6px 12px;font-size:10px}
+
+/* Admin CRUD Modal */
+.a-modal-bg{display:none;position:fixed;inset:0;z-index:11000;background:rgba(15,26,15,0.8);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:20px}
+.a-modal-bg.show{display:flex}
+.a-modal{background:var(--forest2);border:1px solid rgba(201,168,76,0.15);padding:36px;width:min(640px,96vw);border-radius:2px;box-shadow:var(--shadow-lg);max-height:90vh;overflow-y:auto}
+.a-modal-title{font-family:var(--font-display);font-size:1.2rem;color:var(--cream);margin-bottom:24px}
+.a-modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.a-modal-grid .full{grid-column:span 2}
+
+/* Image preview in modals */
+.img-preview{width:100%;height:120px;object-fit:cover;border-radius:1px;margin-top:8px;display:none;border:1px solid rgba(201,168,76,0.15)}
+.img-preview.show{display:block}
+
+/* Admin Gallery Grid */
+.gallery-admin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:16px}
+.gallery-admin-item{position:relative;border-radius:1px;overflow:hidden;aspect-ratio:1}
+.gallery-admin-item img{width:100%;height:100%;object-fit:cover}
+.gallery-admin-item-actions{position:absolute;inset:0;background:rgba(15,26,15,0.7);opacity:0;transition:var(--t3);display:flex;align-items:center;justify-content:center;gap:8px}
+.gallery-admin-item:hover .gallery-admin-item-actions{opacity:1}
+
+/* Homepage Hero Section Manager */
+.hero-img-manager{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.hero-img-thumb{position:relative;width:110px;height:70px;border-radius:1px;overflow:hidden;border:2px solid transparent;cursor:pointer}
+.hero-img-thumb.active{border-color:var(--gold)}
+.hero-img-thumb img{width:100%;height:100%;object-fit:cover}
+.hero-img-thumb .remove-img{position:absolute;top:3px;right:3px;background:rgba(231,76,60,0.8);border:none;color:#fff;width:18px;height:18px;border-radius:50%;font-size:10px;display:flex;align-items:center;justify-content:center;cursor:pointer}
+
+/* Site settings preview */
+.settings-preview-bar{background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.15);padding:16px 20px;border-radius:2px;margin-top:20px}
+
+/* Responsive */
+@media(max-width:1024px){
+  .exp-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .dest-mosaic{grid-template-rows:220px 220px}
+  .about-text-col{padding-left:24px}
+}
+@media(max-width:768px){
+  #nav{padding:16px 0}
+  .nav-menu,.nav-cta-group .nav-phone{display:none}
+  .hamburger{display:flex}
+  .hero-stats-inner{flex-wrap:wrap}
+  .hstat{flex:0 0 50%;border-bottom:1px solid rgba(201,168,76,0.1)}
+  .dest-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .dest-tile.lg,.dest-tile.md,.dest-tile.sm,.dest-tile.wide{grid-column:span 1;height:200px}
+  .exp-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .exp-img-row{grid-template-columns:1fr}
+  .row{flex-direction:column}
+  .col-6,.col-4,.col-8,.col-3{flex:0 0 100%;max-width:100%}
+  .booking-wrap{padding:28px 22px}
+  .about-float-img{display:none}
+  .about-year-badge{left:10px}
+  .about-text-col{padding-left:0;margin-top:40px}
+  .admin-sidebar{display:none}
+  .admin-mobile-nav-btn{display:flex!important}
+  .a-modal-grid{grid-template-columns:1fr}
+  .a-modal-grid .full{grid-column:span 1}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Kairi<span> Tours</span></a>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#packages">Safaris</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#blog">Journal</a></li>
+        <li><a href="#booking">Book</a></li>
+      </ul>
+      <div class="nav-cta-group">
+        <a href="tel:+254727827007" class="nav-phone"><i class="bi bi-telephone-fill" style="color:var(--gold)"></i>+254 727 827 007</a>
+        <button class="btn btn-primary btn-sm" onclick="scrollToSection('#booking')">Book Safari</button>
+        <button class="btn btn-outline btn-sm" onclick="showLogin()" style="border-color:rgba(201,168,76,0.4)"><i class="bi bi-grid-fill"></i> CMS</button>
+        <button class="hamburger" onclick="toggleMobileNav()"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="nav-overlay" id="navOverlay" onclick="toggleMobileNav()"></div>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="toggleMobileNav()"><i class="bi bi-x-lg"></i></button>
+  <a href="#about" onclick="toggleMobileNav()">About Us</a>
+  <a href="#packages" onclick="toggleMobileNav()">Safari Packages</a>
+  <a href="#destinations" onclick="toggleMobileNav()">Destinations</a>
+  <a href="#experiences" onclick="toggleMobileNav()">Experiences</a>
+  <a href="#testimonials" onclick="toggleMobileNav()">Reviews</a>
+  <a href="#blog" onclick="toggleMobileNav()">Journal</a>
+  <a href="#booking" onclick="toggleMobileNav()">Book a Safari</a>
+  <a href="tel:+254727827007" style="color:var(--gold);margin-top:16px"><i class="bi bi-telephone-fill me-2"></i>+254 727 827 007</a>
+  <a href="mailto:info@kairi.co.ke">info@kairi.co.ke</a>
+  <div style="margin-top:20px">
+    <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="showLogin();toggleMobileNav()"><i class="bi bi-grid-fill me-2"></i>Admin CMS</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-slides" id="heroSlides">
+    <!-- Slides populated by JS -->
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="container" style="position:relative;z-index:2;width:100%">
+    <div class="hero-content">
+      <div class="hero-kicker"><i class="bi bi-patch-check-fill"></i> Kenya's Oldest Indigenous Tour Agency · Since 1984</div>
+      <h1 class="hero-title" id="heroTitle">
+        Africa Awaits
+        <span class="line-gold">Your Wild Heart</span>
+        <span class="line-small">Karibu to East Africa</span>
+      </h1>
+      <p class="hero-desc" id="heroDesc">40+ years of extraordinary safaris — from the golden plains of Masai Mara to the snow-capped peaks of Kilimanjaro. Your dream adventure, expertly crafted.</p>
+      <div class="hero-btns">
+        <button class="btn btn-primary btn-lg" onclick="scrollToSection('#packages')"><i class="bi bi-binoculars-fill"></i> Explore Safaris</button>
+        <button class="btn btn-outline-cream btn-lg" onclick="scrollToSection('#booking')"><i class="bi bi-calendar3"></i> Plan My Trip</button>
+      </div>
+    </div>
+  </div>
+  <div class="hero-stats" style="position:absolute;bottom:0;left:0;right:0;z-index:2">
+    <div class="container">
+      <div class="hero-stats-inner">
+        <div class="hstat" style="--delay:0.7s">
+          <div class="hstat-num">40+</div>
+          <div class="hstat-label">Years of Excellence</div>
+        </div>
+        <div class="hstat" style="--delay:0.85s">
+          <div class="hstat-num">15K+</div>
+          <div class="hstat-label">Happy Travellers</div>
+        </div>
+        <div class="hstat" style="--delay:1.0s">
+          <div class="hstat-num">6</div>
+          <div class="hstat-label">Countries Covered</div>
+        </div>
+        <div class="hstat" style="--delay:1.15s">
+          <div class="hstat-num">4.9★</div>
+          <div class="hstat-label">TripAdvisor Rating</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-dots" id="heroDots"></div>
+  <div class="hero-scroll">
+    <span class="scroll-text">Scroll</span>
+    <div class="scroll-bar"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     TICKER
+═══════════════════════════════════════════════════════════ -->
+<div id="ticker">
+  <div class="ticker-track" id="tickerTrack">
+    <!-- Duplicated for seamless loop -->
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     TRUST BAR
+═══════════════════════════════════════════════════════════ -->
+<section id="trust">
+  <div class="container">
+    <div class="d-flex flex-wrap" style="margin:0 -24px">
+      <div class="trust-item" style="flex:1;min-width:200px">
+        <div class="trust-icon"><i class="bi bi-building"></i></div>
+        <div>
+          <div class="trust-label">JKIA Airport Office</div>
+          <div class="trust-sub">Terminal 1A, Open 24/7</div>
+        </div>
+      </div>
+      <div class="trust-item" style="flex:1;min-width:200px">
+        <div class="trust-icon"><i class="bi bi-award-fill"></i></div>
+        <div>
+          <div class="trust-label">Licensed & Bonded</div>
+          <div class="trust-sub">KATO · Tourism Fund</div>
+        </div>
+      </div>
+      <div class="trust-item" style="flex:1;min-width:200px">
+        <div class="trust-icon"><i class="bi bi-headset"></i></div>
+        <div>
+          <div class="trust-label">24/7 Support</div>
+          <div class="trust-sub">WhatsApp & Phone</div>
+        </div>
+      </div>
+      <div class="trust-item" style="flex:1;min-width:200px">
+        <div class="trust-icon"><i class="bi bi-shield-check-fill"></i></div>
+        <div>
+          <div class="trust-label">Best Price Guarantee</div>
+          <div class="trust-sub">No Hidden Fees</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════════════════════ -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="row" style="gap:0;align-items:center">
+      <div class="col-6 reveal-left about-img-col" style="padding-right:20px">
+        <div class="about-year-badge">
+          <span class="yr">40</span>
+          <span class="yrlabel">Years of Excellence</span>
+        </div>
+        <img src="https://images.unsplash.com/photo-1520262494112-9fe481d36ec3?w=900&q=80" alt="Masai Mara Safari - Kairi Tours" class="about-main-img" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=500&q=80" alt="Amboseli Elephants" class="about-float-img" loading="lazy">
+      </div>
+      <div class="col-6 reveal-right d2 about-text-col">
+        <span class="eyebrow">Our Story</span>
+        <h2 class="section-h" style="margin-bottom:16px">Kenya's Oldest <span class="em">Indigenous</span> Tour Agency</h2>
+        <div class="divider"></div>
+        <p style="font-size:15px;color:var(--muted);line-height:1.85;margin-bottom:22px">Founded in 1984, Kairi Tours & Safaris is proudly Kenya's oldest indigenously owned tour company. We are the <strong style="color:var(--forest)">only tour agency with an office at JKIA Arrivals Terminal 1A</strong> — open around the clock, ready to welcome you the moment your plane lands.</p>
+        <p style="font-size:15px;color:var(--muted);line-height:1.85;margin-bottom:28px">Over four decades, we've built unshakeable relationships with lodges, conservancies, and guides across Kenya, Tanzania, Uganda, and beyond — giving you insider access and competitive rates that no newcomer can match.</p>
+        <div class="about-check">
+          <div class="about-check-icon"><i class="bi bi-check-lg"></i></div>
+          <div class="about-check-text"><strong style="color:var(--forest)">Expert multilingual local guides</strong> — deep knowledge of wildlife, culture, and hidden gems across East Africa</div>
+        </div>
+        <div class="about-check">
+          <div class="about-check-icon"><i class="bi bi-check-lg"></i></div>
+          <div class="about-check-text"><strong style="color:var(--forest)">Tailor-made itineraries</strong> — budget, mid-range and luxury packages crafted around your schedule and interests</div>
+        </div>
+        <div class="about-check">
+          <div class="about-check-icon"><i class="bi bi-check-lg"></i></div>
+          <div class="about-check-text"><strong style="color:var(--forest)">Sustainable tourism</strong> — eco-conscious travel that supports local communities and conservation</div>
+        </div>
+        <div class="cert-row">
+          <span class="cert-pill"><i class="bi bi-patch-check-fill"></i> KATO Member</span>
+          <span class="cert-pill"><i class="bi bi-patch-check-fill"></i> Tourism Fund Registered</span>
+          <span class="cert-pill"><i class="bi bi-patch-check-fill"></i> JKIA Airport Office</span>
+          <span class="cert-pill"><i class="bi bi-patch-check-fill"></i> TripAdvisor 4.9★</span>
+        </div>
+        <div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap">
+          <button class="btn btn-primary" onclick="scrollToSection('#booking')">Start Planning</button>
+          <a href="tel:+254727827007" class="btn btn-outline"><i class="bi bi-telephone"></i>+254 727 827 007</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PACKAGES
+═══════════════════════════════════════════════════════════ -->
+<section id="packages" class="section-pad">
+  <div class="container">
+    <div class="d-flex align-center justify-between flex-wrap" style="gap:20px;margin-bottom:14px">
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--gold2)">Safari Packages</span>
+        <h2 class="section-h light" style="color:var(--cream)">Curated Journeys for <span class="em">Every Explorer</span></h2>
+      </div>
+      <div class="pkg-filters reveal d2" id="pkgFilters">
+        <button class="pkg-filter active" data-filter="all">All</button>
+        <button class="pkg-filter" data-filter="budget">Budget</button>
+        <button class="pkg-filter" data-filter="midrange">Mid-Range</button>
+        <button class="pkg-filter" data-filter="luxury">Luxury</button>
+        <button class="pkg-filter" data-filter="beach">Beach</button>
+        <button class="pkg-filter" data-filter="trekking">Trekking</button>
+      </div>
+    </div>
+    <p class="section-sub light reveal d3" style="margin-bottom:40px">From a day excursion to a 14-day grand circuit — every itinerary is crafted with 40 years of East African expertise.</p>
+    <div id="pkgsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px"></div>
+    <div class="text-center" style="margin-top:44px">
+      <button class="btn btn-outline-cream" onclick="scrollToSection('#booking')">Request a Custom Package <i class="bi bi-arrow-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     DESTINATIONS
+═══════════════════════════════════════════════════════════ -->
+<section id="destinations" class="section-pad">
+  <div class="container-wide">
+    <div class="text-center reveal" style="margin-bottom:48px">
+      <span class="eyebrow">Destinations</span>
+      <h2 class="section-h">Explore the <span class="em">Wild Heart</span> of Africa</h2>
+      <p class="section-sub text-center" style="margin:16px auto 0">Kenya, Tanzania, Uganda, Rwanda — every landscape a revelation.</p>
+    </div>
+    <div class="dest-mosaic" id="destMosaic"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     EXPERIENCES
+═══════════════════════════════════════════════════════════ -->
+<section id="experiences" class="section-pad">
+  <div class="container">
+    <div class="row" style="align-items:flex-end;margin-bottom:48px">
+      <div class="col-6 reveal-left">
+        <span class="eyebrow">Safari Experiences</span>
+        <h2 class="section-h">Beyond the <span class="em">Ordinary</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="col-6 reveal-right d2">
+        <p class="section-sub">From soaring over golden plains in a hot air balloon to walking silently beside elephants at dusk — Kairi designs moments etched into memory forever.</p>
+        <div style="margin-top:22px;display:flex;gap:10px">
+          <button class="btn btn-primary btn-sm" onclick="scrollToSection('#booking')">Book an Experience</button>
+        </div>
+      </div>
+    </div>
+    <div class="exp-grid" id="expGrid"></div>
+    <div class="exp-img-row reveal" style="margin-top:48px">
+      <div class="exp-img-card">
+        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=700&q=80" alt="Masai Mara Game Drive" loading="lazy">
+        <div class="exp-img-label">Game Drive</div>
+      </div>
+      <div class="exp-img-card">
+        <img src="https://images.unsplash.com/photo-1504173010664-32509107de50?w=700&q=80" alt="Hot Air Balloon Safari" loading="lazy">
+        <div class="exp-img-label">Balloon Safari</div>
+      </div>
+      <div class="exp-img-card">
+        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=700&q=80" alt="Diani Beach Kenya" loading="lazy">
+        <div class="exp-img-label">Beach Extension</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     GALLERY
+═══════════════════════════════════════════════════════════ -->
+<section id="gallery">
+  <div class="container-wide">
+    <div class="text-center reveal" style="margin-bottom:36px">
+      <span class="eyebrow" style="color:var(--gold2)">Photo Gallery</span>
+      <h2 class="section-h light" style="color:var(--cream)">Through Our <span class="em">Lens</span></h2>
+    </div>
+    <div class="swiper gallery-swiper" id="gallerySwiper">
+      <div class="swiper-wrapper" id="gallerySwiperWrap"></div>
+      <div class="swiper-pagination" style="margin-top:20px;position:relative"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     WHY KAIRI
+═══════════════════════════════════════════════════════════ -->
+<section id="why" class="section-pad">
+  <div class="container-wide">
+    <div class="text-center reveal" style="margin-bottom:50px">
+      <span class="eyebrow">Why Kairi Tours</span>
+      <h2 class="section-h">Six Reasons to <span class="em">Travel With Us</span></h2>
+    </div>
+    <div class="why-grid" id="whyGrid"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════════════════════ -->
+<section id="testimonials" class="section-pad">
+  <div class="container">
+    <div class="d-flex align-center justify-between flex-wrap" style="gap:20px;margin-bottom:48px">
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--gold2)">Guest Stories</span>
+        <h2 class="section-h light" style="color:var(--cream)">Words from Our <span class="em">Safari Family</span></h2>
+      </div>
+      <div class="reveal d2" style="display:flex;align-items:center;gap:12px">
+        <div style="text-align:right">
+          <div style="font-family:var(--font-display);font-size:2.5rem;font-weight:900;color:var(--gold);line-height:1">4.9</div>
+          <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted2)">TripAdvisor · 150+ Reviews</div>
+        </div>
+        <div style="font-size:24px;color:var(--gold)">★★★★★</div>
+      </div>
+    </div>
+    <div id="testiGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px"></div>
+    <div class="testi-nav-dots" id="testiDots"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     BOOKING
+═══════════════════════════════════════════════════════════ -->
+<section id="booking" class="section-pad">
+  <div class="booking-bg" style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&q=80')"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div class="text-center reveal" style="margin-bottom:50px">
+      <span class="eyebrow">Book Your Safari</span>
+      <h2 class="section-h">Your <span class="em">Adventure</span> Awaits</h2>
+      <p class="section-sub" style="margin:14px auto 0">Our consultants respond within 24 hours with a personalised itinerary and quote.</p>
+    </div>
+    <div class="row" style="gap:24px;align-items:flex-start">
+      <div class="col-8 reveal-left">
+        <div class="booking-wrap">
+          <form id="bookingForm" onsubmit="submitBooking(event)">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+              <div>
+                <label class="f-label">First Name *</label>
+                <input type="text" class="f-input" placeholder="Your first name" required>
+              </div>
+              <div>
+                <label class="f-label">Last Name *</label>
+                <input type="text" class="f-input" placeholder="Your last name" required>
+              </div>
+              <div>
+                <label class="f-label">Email Address *</label>
+                <input type="email" class="f-input" placeholder="you@email.com" required>
+              </div>
+              <div>
+                <label class="f-label">Phone / WhatsApp</label>
+                <input type="tel" class="f-input" placeholder="+1 234 567 8900">
+              </div>
+              <div>
+                <label class="f-label">Safari Package *</label>
+                <select class="f-select" id="bookingPkg" required>
+                  <option value="">Select a package...</option>
+                </select>
+              </div>
+              <div>
+                <label class="f-label">Number of Travellers</label>
+                <select class="f-select">
+                  <option value="1">1 Person</option>
+                  <option value="2" selected>2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5+">5+ People (Group)</option>
+                </select>
+              </div>
+              <div>
+                <label class="f-label">Preferred Start Date</label>
+                <input type="date" class="f-input">
+              </div>
+              <div>
+                <label class="f-label">Budget Range</label>
+                <select class="f-select">
+                  <option value="">Select budget...</option>
+                  <option>Budget (Under $1,000/person)</option>
+                  <option>Mid-Range ($1,000–$2,500/person)</option>
+                  <option>Luxury ($2,500–$5,000/person)</option>
+                  <option>Ultra-Luxury ($5,000+/person)</option>
+                </select>
+              </div>
+              <div style="grid-column:span 2">
+                <label class="f-label">Special Requests / Message</label>
+                <textarea class="f-input" rows="4" placeholder="Tell us about your dream safari — preferred destinations, interests, accommodation style, dietary needs..."></textarea>
+              </div>
+              <div style="grid-column:span 2">
+                <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;padding:17px">
+                  <i class="bi bi-send-fill"></i> Send Enquiry — We'll Respond in 24hrs
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-4 reveal-right d2">
+        <div class="booking-info-card">
+          <div style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--cream);margin-bottom:24px">Get in Touch</div>
+          <div class="booking-info-item">
+            <div class="binfo-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <div class="binfo-title">Call or WhatsApp</div>
+              <div class="binfo-text">
+                <a href="tel:+254727827007" style="color:var(--gold);text-decoration:none">+254 727 827 007</a><br>
+                <a href="tel:+254020238533" style="color:var(--muted2);text-decoration:none">+254 020 238 5334</a><br>
+                <a href="tel:+254735188090" style="color:var(--muted2);text-decoration:none">+254 735 188 090</a>
+              </div>
+            </div>
+          </div>
+          <div class="booking-info-item">
+            <div class="binfo-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <div class="binfo-title">Email Us</div>
+              <div class="binfo-text"><a href="mailto:info@kairi.co.ke" style="color:var(--gold);text-decoration:none">info@kairi.co.ke</a></div>
+            </div>
+          </div>
+          <div class="booking-info-item">
+            <div class="binfo-icon"><i class="bi bi-building"></i></div>
+            <div>
+              <div class="binfo-title">Nairobi CBD Office</div>
+              <div class="binfo-text">Standard House, Wabera Street<br>Nairobi CBD, Kenya</div>
+            </div>
+          </div>
+          <div class="booking-info-item">
+            <div class="binfo-icon"><i class="bi bi-airplane-fill"></i></div>
+            <div>
+              <div class="binfo-title">JKIA Airport Office</div>
+              <div class="binfo-text">Arrivals Terminal 1A<br>Open 24 hours · 7 days a week</div>
+            </div>
+          </div>
+          <div style="margin-top:6px">
+            <a href="https://wa.me/254727827007" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;background:#25D366;border-color:#25D366">
+              <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     BLOG
+═══════════════════════════════════════════════════════════ -->
+<section id="blog" class="section-pad">
+  <div class="container">
+    <div class="d-flex align-center justify-between flex-wrap" style="gap:20px;margin-bottom:48px">
+      <div class="reveal">
+        <span class="eyebrow">Safari Journal</span>
+        <h2 class="section-h">Stories from <span class="em">the Wild</span></h2>
+      </div>
+      <button class="btn btn-outline reveal d2" onclick="scrollToSection('#booking')">View All Articles</button>
+    </div>
+    <div id="blogGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NEWSLETTER
+═══════════════════════════════════════════════════════════ -->
+<section id="newsletter">
+  <div class="container">
+    <div class="row" style="align-items:center;gap:0">
+      <div class="col-6 reveal-left">
+        <h2 class="nl-title">Join 5,000+ Safari Enthusiasts</h2>
+        <p class="nl-sub">Get seasonal safari deals, wildlife news, and expert travel tips delivered monthly.</p>
+      </div>
+      <div class="col-6 reveal-right d2">
+        <form onsubmit="subscribeNewsletter(event)" style="display:flex;gap:8px;flex-wrap:wrap">
+          <input type="email" class="nl-input" placeholder="Your email address" required style="flex:1;min-width:200px">
+          <button type="submit" class="nl-btn">Subscribe</button>
+        </form>
+        <p style="font-size:11px;color:rgba(26,46,26,0.5);margin-top:10px">No spam. Unsubscribe anytime. We respect your privacy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:40px;flex-wrap:wrap">
+        <div>
+          <div class="footer-logo">Kairi<span> Tours</span></div>
+          <p class="footer-tagline">Kenya's oldest indigenously owned tour agency since 1984. Karibu — Welcome to East Africa's greatest adventure.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/kairitours" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/kairitours" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/kairitours" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://wa.me/254727827007" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.tripadvisor.com/Attraction_Review-g294207-d4893455" target="_blank" aria-label="TripAdvisor"><i class="bi bi-star-fill"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-head">Safaris</div>
+          <a href="#packages" class="footer-link" onclick="scrollToSection('#packages')">Budget Safaris</a>
+          <a href="#packages" class="footer-link" onclick="scrollToSection('#packages')">Mid-Range Safaris</a>
+          <a href="#packages" class="footer-link" onclick="scrollToSection('#packages')">Luxury Safaris</a>
+          <a href="#packages" class="footer-link" onclick="scrollToSection('#packages')">Beach Packages</a>
+          <a href="#packages" class="footer-link" onclick="scrollToSection('#packages')">Mountain Trekking</a>
+          <a href="#packages" class="footer-link" onclick="scrollToSection('#packages')">Day Excursions</a>
+        </div>
+        <div>
+          <div class="footer-head">Destinations</div>
+          <a href="#destinations" class="footer-link">Masai Mara</a>
+          <a href="#destinations" class="footer-link">Amboseli</a>
+          <a href="#destinations" class="footer-link">Serengeti, Tanzania</a>
+          <a href="#destinations" class="footer-link">Tsavo East & West</a>
+          <a href="#destinations" class="footer-link">Diani Beach</a>
+          <a href="#destinations" class="footer-link">Lake Nakuru</a>
+          <a href="#destinations" class="footer-link">Bwindi, Uganda</a>
+        </div>
+        <div>
+          <div class="footer-head">Contact</div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill footer-ci-icon"></i>
+            <div class="footer-ci-text">Standard House, Wabera St<br>Nairobi CBD, Kenya</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-airplane-fill footer-ci-icon"></i>
+            <div class="footer-ci-text">JKIA Arrivals Terminal 1A<br>Open 24/7</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill footer-ci-icon"></i>
+            <div class="footer-ci-text">
+              <a href="tel:+254727827007">+254 727 827 007</a><br>
+              <a href="tel:+254020238533">+254 020 238 5334</a><br>
+              <a href="tel:+254735188090">+254 735 188 090</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill footer-ci-icon"></i>
+            <div class="footer-ci-text"><a href="mailto:info@kairi.co.ke">info@kairi.co.ke</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Kairi Tours & Safaris. All rights reserved. Est. 1984.</div>
+      <div class="footer-certs">
+        <span class="footer-cert">KATO Member</span>
+        <span class="footer-cert">Tourism Fund</span>
+        <span class="footer-cert">KWS Partner</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/254727827007?text=Hello%20Kairi%20Tours!%20I%27m%20interested%20in%20booking%20a%20safari." class="wa-float" target="_blank" aria-label="Chat on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Notification Toast -->
+<div id="notif">
+  <i class="notif-icon bi bi-check-circle-fill"></i>
+  <span class="notif-text" id="notifText">Success</span>
+  <button class="notif-close" onclick="closeNotif()"><i class="bi bi-x-lg"></i></button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ADMIN LOGIN MODAL
+═══════════════════════════════════════════════════════════ -->
+<div id="loginModal">
+  <div class="login-box">
+    <div class="login-logo">Kairi CMS</div>
+    <div class="login-sub">Content Management System</div>
+    <label class="a-label">Username</label>
+    <input type="text" class="login-input" id="loginUser" placeholder="admin" autocomplete="username">
+    <label class="a-label">Password</label>
+    <input type="password" class="login-input" id="loginPass" placeholder="••••••••" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
+    <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:6px" onclick="doLogin()">
+      <i class="bi bi-lock-fill"></i> Login to CMS
+    </button>
+    <div class="login-hint">Default: admin / kairi2024</div>
+    <div style="text-align:center;margin-top:16px">
+      <button onclick="closeLogin()" style="background:none;border:none;color:var(--muted2);font-size:12px;cursor:pointer">← Back to website</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ADMIN PANEL
+═══════════════════════════════════════════════════════════ -->
+<div id="adminPanel">
+  <!-- Sidebar -->
+  <div class="admin-sidebar">
+    <div class="admin-brand">
+      <div>
+        <div class="admin-brand-name">Kairi CMS</div>
+        <div class="admin-brand-sub">v2.0 · Content Manager</div>
+      </div>
+    </div>
+    <div class="admin-nav-section">Overview</div>
+    <a class="admin-nav-item active" onclick="showAdminSection('dashboard',this)"><i class="bi bi-speedometer2"></i> Dashboard</a>
+    <div class="admin-nav-section">Safari Content</div>
+    <a class="admin-nav-item" onclick="showAdminSection('hero-admin',this)"><i class="bi bi-image-fill"></i> Hero Section</a>
+    <a class="admin-nav-item" onclick="showAdminSection('packages-admin',this)"><i class="bi bi-briefcase-fill"></i> Packages</a>
+    <a class="admin-nav-item" onclick="showAdminSection('destinations-admin',this)"><i class="bi bi-map-fill"></i> Destinations</a>
+    <a class="admin-nav-item" onclick="showAdminSection('experiences-admin',this)"><i class="bi bi-compass-fill"></i> Experiences</a>
+    <div class="admin-nav-section">Bookings</div>
+    <a class="admin-nav-item" onclick="showAdminSection('bookings-admin',this)"><i class="bi bi-calendar-check-fill"></i> All Bookings</a>
+    <div class="admin-nav-section">Content</div>
+    <a class="admin-nav-item" onclick="showAdminSection('testimonials-admin',this)"><i class="bi bi-chat-quote-fill"></i> Testimonials</a>
+    <a class="admin-nav-item" onclick="showAdminSection('blog-admin',this)"><i class="bi bi-journal-richtext"></i> Blog Posts</a>
+    <a class="admin-nav-item" onclick="showAdminSection('gallery-admin',this)"><i class="bi bi-images"></i> Gallery</a>
+    <div class="admin-nav-section">System</div>
+    <a class="admin-nav-item" onclick="showAdminSection('settings-admin',this)"><i class="bi bi-gear-fill"></i> Site Settings</a>
+    <a class="admin-nav-item" onclick="closeAdmin()"><i class="bi bi-box-arrow-left"></i> Exit CMS</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="admin-main">
+    <div class="admin-topbar">
+      <div class="admin-page-title" id="adminPageTitle">Dashboard</div>
+      <div style="display:flex;align-items:center;gap:14px">
+        <span style="font-size:12px;color:var(--muted2)">Logged in as <strong style="color:var(--gold)">Admin</strong></span>
+        <div style="width:34px;height:34px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--forest);font-size:13px">A</div>
+        <button class="a-btn a-btn-outline a-btn-sm" onclick="closeAdmin()"><i class="bi bi-x-lg"></i></button>
+      </div>
+    </div>
+    <div class="admin-content">
+
+      <!-- DASHBOARD -->
+      <div class="admin-section active" id="dashboard">
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px">
+          <div class="a-stat">
+            <div class="a-stat-num" id="d-total-bookings">0</div>
+            <div class="a-stat-label">Total Bookings</div>
+            <div class="a-stat-change up"><i class="bi bi-arrow-up"></i> +12% this month</div>
+          </div>
+          <div class="a-stat">
+            <div class="a-stat-num" id="d-total-pkgs">0</div>
+            <div class="a-stat-label">Active Packages</div>
+          </div>
+          <div class="a-stat">
+            <div class="a-stat-num" id="d-total-testi">0</div>
+            <div class="a-stat-label">Testimonials</div>
+          </div>
+          <div class="a-stat">
+            <div class="a-stat-num">4.9★</div>
+            <div class="a-stat-label">Avg Rating</div>
+            <div class="a-stat-change up"><i class="bi bi-arrow-up"></i> 150+ reviews</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:16px">
+          <div class="a-card">
+            <div class="a-card-title">Recent Bookings</div>
+            <div style="overflow-x:auto"><table class="a-table" id="d-bookings-table"></table></div>
+          </div>
+          <div class="a-card">
+            <div class="a-card-title">Quick Actions</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <button class="a-btn a-btn-gold" style="justify-content:center" onclick="showAdminSection('packages-admin',null);openPkgModal()"><i class="bi bi-plus-lg"></i> Add Package</button>
+              <button class="a-btn a-btn-outline" style="justify-content:center" onclick="showAdminSection('blog-admin',null);openBlogModal()"><i class="bi bi-pencil"></i> New Blog Post</button>
+              <button class="a-btn a-btn-outline" style="justify-content:center" onclick="showAdminSection('testimonials-admin',null);openTestiModal()"><i class="bi bi-chat-quote"></i> Add Testimonial</button>
+              <button class="a-btn a-btn-outline" style="justify-content:center" onclick="showAdminSection('gallery-admin',null)"><i class="bi bi-images"></i> Manage Gallery</button>
+              <button class="a-btn a-btn-outline" style="justify-content:center" onclick="exportCSV()"><i class="bi bi-download"></i> Export Bookings CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO SECTION ADMIN -->
+      <div class="admin-section" id="hero-admin">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px">
+          <div>
+            <div style="color:var(--cream);font-weight:600;font-size:15px">Hero Section Manager</div>
+            <div style="color:var(--muted2);font-size:12px;margin-top:3px">Control hero images, title, subtitle, and call-to-action buttons</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+          <div class="a-card">
+            <div class="a-card-title">Hero Images (Slideshow)</div>
+            <div class="hero-img-manager" id="heroImgManager"></div>
+            <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+              <input class="a-input" id="heroImgUrl" placeholder="Image URL (Unsplash, etc.)" style="flex:1;min-width:200px">
+              <input class="a-input" id="heroImgCaption" placeholder="Caption (optional)" style="flex:1;min-width:150px">
+              <button class="a-btn a-btn-gold" onclick="addHeroImage()"><i class="bi bi-plus-lg"></i> Add</button>
+            </div>
+            <p style="font-size:11px;color:var(--muted);margin-top:8px">Click any thumbnail to set as primary. Recommended: landscape 1920x1080px.</p>
+          </div>
+          <div class="a-card">
+            <div class="a-card-title">Hero Content</div>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div>
+                <label class="a-label">Main Title Line 1</label>
+                <input class="a-input" id="heroTitleLine1" placeholder="Africa Awaits">
+              </div>
+              <div>
+                <label class="a-label">Title Line 2 (Gold / Italic)</label>
+                <input class="a-input" id="heroTitleLine2" placeholder="Your Wild Heart">
+              </div>
+              <div>
+                <label class="a-label">Subtitle / Tagline</label>
+                <input class="a-input" id="heroTagline" placeholder="Karibu to East Africa">
+              </div>
+              <div>
+                <label class="a-label">Hero Description</label>
+                <textarea class="a-textarea" id="heroDescText" rows="3" placeholder="40+ years of extraordinary safaris..."></textarea>
+              </div>
+              <button class="a-btn a-btn-gold" onclick="saveHeroContent()"><i class="bi bi-check-lg"></i> Save Hero Content</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PACKAGES ADMIN -->
+      <div class="admin-section" id="packages-admin">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px">
+          <div>
+            <div style="color:var(--cream);font-weight:600;font-size:15px">Manage Safari Packages</div>
+            <div style="color:var(--muted2);font-size:12px;margin-top:3px">Create, edit and manage all safari packages shown on website</div>
+          </div>
+          <button class="a-btn a-btn-gold" onclick="openPkgModal()"><i class="bi bi-plus-lg"></i> Add Package</button>
+        </div>
+        <div style="overflow-x:auto"><table class="a-table" id="pkgsAdminTable"></table></div>
+      </div>
+
+      <!-- BOOKINGS ADMIN -->
+      <div class="admin-section" id="bookings-admin">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px">
+          <div>
+            <div style="color:var(--cream);font-weight:600;font-size:15px">All Bookings & Enquiries</div>
+            <div style="color:var(--muted2);font-size:12px;margin-top:3px">Manage customer enquiries from the booking form</div>
+          </div>
+          <div style="display:flex;gap:8px">
+            <input class="a-input" id="bookingSearch" placeholder="Search by name..." style="width:200px" oninput="renderAdminBookings()">
+            <button class="a-btn a-btn-outline" onclick="exportCSV()"><i class="bi bi-download"></i> Export CSV</button>
+          </div>
+        </div>
+        <div style="overflow-x:auto"><table class="a-table" id="bookingsAdminTable"></table></div>
+      </div>
+
+      <!-- DESTINATIONS ADMIN -->
+      <div class="admin-section" id="destinations-admin">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px">
+          <div style="color:var(--cream);font-weight:600;font-size:15px">Manage Destinations</div>
+          <button class="a-btn a-btn-gold" onclick="openDestModal()"><i class="bi bi-plus-lg"></i> Add Destination</button>
+        </div>
+        <div id="destAdminGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px"></div>
+      </div>
+
+      <!-- EXPERIENCES ADMIN -->
+      <div class="admin-section" id="experiences-admin">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px">
+          <div style="color:var(--cream);font-weight:600;font-size:15px">Manage Experiences</div>
+          <button class="a-btn a-btn-gold" onclick="openExpModal()"><i class="bi bi-plus-lg"></i> Add Experience</button>
+        </div>
+        <div style="overflow-x:auto"><table class="a-table" id="expAdminTable"></table></div>
+      </div>
+
+      <!-- TESTIMONIALS ADMIN -->
+      <div class="admin-section" id="testimonials-admin">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px">
+          <div style="color:var(--cream);font-weight:600;font-size:15px">Guest Testimonials</div>
+          <button class="a-btn a-btn-gold" onclick="openTestiModal()"><i class="bi bi-plus-lg"></i> Add Testimonial</button>
+        </div>
+        <div style="overflow-x:auto"><table class="a-table" id="testiAdminTable"></table></div>
+      </div>
+
+      <!-- BLOG ADMIN -->
+      <div class="admin-section" id="blog-admin">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px">
+          <div style="color:var(--cream);font-weight:600;font-size:15px">Blog Posts & Articles</div>
+          <button class="a-btn a-btn-gold" onclick="openBlogModal()"><i class="bi bi-plus-lg"></i> New Post</button>
+        </div>
+        <div style="overflow-x:auto"><table class="a-table" id="blogAdminTable"></table></div>
+      </div>
+
+      <!-- GALLERY ADMIN -->
+      <div class="admin-section" id="gallery-admin">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px">
+          <div>
+            <div style="color:var(--cream);font-weight:600;font-size:15px">Photo Gallery</div>
+            <div style="color:var(--muted2);font-size:12px;margin-top:3px">Manage photos shown in the website gallery carousel</div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <input class="a-input" id="galleryAddUrl" placeholder="Image URL" style="width:280px">
+            <input class="a-input" id="galleryAddCaption" placeholder="Caption" style="width:180px">
+            <button class="a-btn a-btn-gold" onclick="addGalleryImg()"><i class="bi bi-plus-lg"></i> Add</button>
+          </div>
+        </div>
+        <div class="gallery-admin-grid" id="galleryAdminGrid"></div>
+      </div>
+
+      <!-- SETTINGS ADMIN -->
+      <div class="admin-section" id="settings-admin">
+        <div style="color:var(--cream);font-weight:600;font-size:15px;margin-bottom:24px">Site Settings</div>
+        <div style="display:grid;grid-template-columns:2fr 1fr;gap:20px">
+          <div class="a-card">
+            <div style="color:var(--gold);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:18px;font-weight:700">Company Information</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div><label class="a-label">Company Name</label><input class="a-input" id="s-name" value="Kairi Tours & Safaris"></div>
+              <div><label class="a-label">Website URL</label><input class="a-input" id="s-website" value="https://kairi.co.ke"></div>
+              <div><label class="a-label">Primary Email</label><input class="a-input" id="s-email" value="info@kairi.co.ke"></div>
+              <div><label class="a-label">Primary Phone</label><input class="a-input" id="s-phone" value="+254 727 827 007"></div>
+              <div style="grid-column:span 2"><label class="a-label">CBD Office Address</label><input class="a-input" id="s-address" value="Standard House, Wabera Street, Nairobi CBD, Kenya"></div>
+              <div style="grid-column:span 2"><label class="a-label">Hero Title Line 1</label><input class="a-input" id="s-hero1" value="Africa Awaits"></div>
+              <div style="grid-column:span 2"><label class="a-label">Hero Title Line 2 (Gold)</label><input class="a-input" id="s-hero2" value="Your Wild Heart"></div>
+              <div style="grid-column:span 2"><label class="a-label">Hero Description</label><textarea class="a-textarea" id="s-heroDesc" rows="2">40+ years of extraordinary safaris — from the golden plains of Masai Mara to the snow-capped peaks of Kilimanjaro.</textarea></div>
+              <div style="grid-column:span 2;margin-top:4px">
+                <button class="a-btn a-btn-gold" onclick="saveSettings()"><i class="bi bi-check-lg"></i> Save Settings</button>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div class="a-card">
+              <div style="color:var(--gold);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:16px;font-weight:700">Admin Security</div>
+              <label class="a-label">New Password</label>
+              <input type="password" class="a-input" id="newAdminPass" placeholder="Enter new password" style="margin-bottom:10px">
+              <label class="a-label">Confirm Password</label>
+              <input type="password" class="a-input" id="confirmAdminPass" placeholder="Confirm new password" style="margin-bottom:10px">
+              <button class="a-btn a-btn-outline" onclick="changeAdminPass()"><i class="bi bi-shield-lock"></i> Update Password</button>
+            </div>
+            <div class="a-card">
+              <div style="color:var(--gold);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:16px;font-weight:700">Data Management</div>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <button class="a-btn a-btn-outline" onclick="exportAllData()"><i class="bi bi-download"></i> Export All Data (JSON)</button>
+                <button class="a-btn a-btn-danger" onclick="resetData()"><i class="bi bi-arrow-counterclockwise"></i> Reset to Defaults</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /admin-content -->
+  </div><!-- /admin-main -->
+</div><!-- /adminPanel -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     CRUD MODALS
+═══════════════════════════════════════════════════════════ -->
+
+<!-- Package Modal -->
+<div class="a-modal-bg" id="pkgModal">
+  <div class="a-modal">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px">
+      <div class="a-modal-title" id="pkgModalTitle">Add Safari Package</div>
+      <button onclick="closePkgModal()" style="background:none;border:none;color:var(--muted2);font-size:20px;cursor:pointer"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="a-modal-grid">
+      <div class="full"><label class="a-label">Package Name *</label><input class="a-input" id="pm-name" placeholder="e.g. Masai Mara Classic Safari"></div>
+      <div><label class="a-label">Destination *</label><input class="a-input" id="pm-dest" placeholder="e.g. Masai Mara, Kenya"></div>
+      <div><label class="a-label">Duration *</label><input class="a-input" id="pm-dur" placeholder="e.g. 5 Days / 4 Nights"></div>
+      <div><label class="a-label">Price (USD) *</label><input type="number" class="a-input" id="pm-price" placeholder="850" min="0"></div>
+      <div><label class="a-label">Category *</label>
+        <select class="a-select" id="pm-tier">
+          <option value="budget">Budget</option>
+          <option value="midrange">Mid-Range</option>
+          <option value="luxury">Luxury</option>
+          <option value="beach">Beach</option>
+          <option value="trekking">Trekking</option>
+        </select>
+      </div>
+      <div class="full"><label class="a-label">Description</label><textarea class="a-textarea" id="pm-desc" rows="3" placeholder="Describe the safari experience in detail..."></textarea></div>
+      <div class="full"><label class="a-label">Features (comma separated)</label><input class="a-input" id="pm-feats" placeholder="Game Drives, Bush Dinner, Lodge Accommodation, Park Fees"></div>
+      <div class="full">
+        <label class="a-label">Package Image URL</label>
+        <input class="a-input" id="pm-img" placeholder="https://images.unsplash.com/..." oninput="previewImg('pm-img','pm-img-preview')">
+        <img id="pm-img-preview" class="img-preview" alt="Preview">
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:20px">
+      <button class="a-btn a-btn-gold" onclick="savePkg()"><i class="bi bi-check-lg"></i> Save Package</button>
+      <button class="a-btn a-btn-outline" onclick="closePkgModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- Destination Modal -->
+<div class="a-modal-bg" id="destModal">
+  <div class="a-modal">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px">
+      <div class="a-modal-title" id="destModalTitle">Add Destination</div>
+      <button onclick="closeDestModal()" style="background:none;border:none;color:var(--muted2);font-size:20px;cursor:pointer"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="a-modal-grid">
+      <div><label class="a-label">Destination Name *</label><input class="a-input" id="dm-name" placeholder="e.g. Masai Mara"></div>
+      <div><label class="a-label">Country *</label><input class="a-input" id="dm-country" placeholder="e.g. Kenya"></div>
+      <div><label class="a-label">Number of Tours</label><input type="number" class="a-input" id="dm-tours" placeholder="12" min="0"></div>
+      <div><label class="a-label">Display Size</label>
+        <select class="a-select" id="dm-size">
+          <option value="normal">Normal</option>
+          <option value="large">Large (2x2)</option>
+          <option value="tall">Tall (1x2)</option>
+          <option value="wide">Wide (2x1)</option>
+        </select>
+      </div>
+      <div class="full">
+        <label class="a-label">Destination Image URL</label>
+        <input class="a-input" id="dm-img" placeholder="https://images.unsplash.com/..." oninput="previewImg('dm-img','dm-img-preview')">
+        <img id="dm-img-preview" class="img-preview" alt="Preview">
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:20px">
+      <button class="a-btn a-btn-gold" onclick="saveDest()"><i class="bi bi-check-lg"></i> Save Destination</button>
+      <button class="a-btn a-btn-outline" onclick="closeDestModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- Experience Modal -->
+<div class="a-modal-bg" id="expModal">
+  <div class="a-modal">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px">
+      <div class="a-modal-title" id="expModalTitle">Add Experience</div>
+      <button onclick="closeExpModal()" style="background:none;border:none;color:var(--muted2);font-size:20px;cursor:pointer"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="a-modal-grid">
+      <div><label class="a-label">Title *</label><input class="a-input" id="em-title" placeholder="e.g. Hot Air Balloon Safari"></div>
+      <div><label class="a-label">Bootstrap Icon Class *</label><input class="a-input" id="em-icon" placeholder="bi-balloon-fill"></div>
+      <div class="full"><label class="a-label">Description</label><textarea class="a-textarea" id="em-desc" rows="3" placeholder="Describe the experience..."></textarea></div>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:20px">
+      <button class="a-btn a-btn-gold" onclick="saveExp()"><i class="bi bi-check-lg"></i> Save</button>
+      <button class="a-btn a-btn-outline" onclick="closeExpModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonial Modal -->
+<div class="a-modal-bg" id="testiModal">
+  <div class="a-modal">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px">
+      <div class="a-modal-title">Add Guest Testimonial</div>
+      <button onclick="closeTestiModal()" style="background:none;border:none;color:var(--muted2);font-size:20px;cursor:pointer"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="a-modal-grid">
+      <div><label class="a-label">Guest Name *</label><input class="a-input" id="tm-name" placeholder="e.g. Sarah M."></div>
+      <div><label class="a-label">Country of Origin *</label><input class="a-input" id="tm-origin" placeholder="e.g. United States"></div>
+      <div><label class="a-label">Rating (1-5)</label><select class="a-select" id="tm-rating"><option value="5">★★★★★ (5)</option><option value="4">★★★★ (4)</option><option value="3">★★★ (3)</option></select></div>
+      <div><label class="a-label">Safari Taken</label><input class="a-input" id="tm-safari" placeholder="e.g. Masai Mara 5-Day Safari"></div>
+      <div class="full"><label class="a-label">Review Text *</label><textarea class="a-textarea" id="tm-text" rows="4" placeholder="Guest's review text..."></textarea></div>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:20px">
+      <button class="a-btn a-btn-gold" onclick="saveTesti()"><i class="bi bi-check-lg"></i> Save Testimonial</button>
+      <button class="a-btn a-btn-outline" onclick="closeTestiModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- Blog Modal -->
+<div class="a-modal-bg" id="blogModal">
+  <div class="a-modal">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px">
+      <div class="a-modal-title" id="blogModalTitle">New Blog Post</div>
+      <button onclick="closeBlogModal()" style="background:none;border:none;color:var(--muted2);font-size:20px;cursor:pointer"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="a-modal-grid">
+      <div class="full"><label class="a-label">Article Title *</label><input class="a-input" id="bm-title" placeholder="e.g. The Ultimate Guide to Masai Mara in 2026"></div>
+      <div><label class="a-label">Category</label><select class="a-select" id="bm-cat"><option>Wildlife</option><option>Travel Tips</option><option>Destinations</option><option>Conservation</option><option>Culture</option><option>Photography</option></select></div>
+      <div><label class="a-label">Author</label><input class="a-input" id="bm-author" placeholder="Kairi Team" value="Kairi Team"></div>
+      <div class="full"><label class="a-label">Excerpt *</label><textarea class="a-textarea" id="bm-excerpt" rows="3" placeholder="Brief summary shown on the blog card..."></textarea></div>
+      <div class="full">
+        <label class="a-label">Featured Image URL</label>
+        <input class="a-input" id="bm-img" placeholder="https://images.unsplash.com/..." oninput="previewImg('bm-img','bm-img-preview')">
+        <img id="bm-img-preview" class="img-preview" alt="Preview">
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:20px">
+      <button class="a-btn a-btn-gold" onclick="saveBlog()"><i class="bi bi-send"></i> Publish Post</button>
+      <button class="a-btn a-btn-outline" onclick="closeBlogModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+/* ═══════════════════════════════════════════════════════════
+   KAIRI TOURS & SAFARIS — APPLICATION LOGIC v2.0
+═══════════════════════════════════════════════════════════ */
+
+// ─── DEFAULT DATA ──────────────────────────────────────────
+const DEFAULTS = {
+  heroImages:[
+    {url:'https://images.unsplash.com/photo-1535941339077-2dd1c7963098?w=1800&q=80',caption:'Masai Mara — Kenya'},
+    {url:'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1800&q=80',caption:'Great Migration, Masai Mara'},
+    {url:'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1800&q=80',caption:'Amboseli — Elephants & Kilimanjaro'},
+    {url:'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1800&q=80',caption:'Mount Kenya — Trekking'},
+    {url:'https://images.unsplash.com/photo-1585468273881-fc8df8e1fc2f?w=1800&q=80',caption:'Bwindi — Gorilla Trekking, Uganda'},
+  ],
+  heroContent:{
+    line1:'Africa Awaits',
+    line2:'Your Wild Heart',
+    tagline:'Karibu to East Africa',
+    desc:"40+ years of extraordinary safaris — from the golden plains of Masai Mara to the snow-capped peaks of Kilimanjaro. Your dream adventure, expertly crafted."
+  },
+  packages:[
+    {id:1,name:"Masai Mara Classic Safari",dest:"Masai Mara, Kenya",dur:"5 Days / 4 Nights",price:850,tier:"budget",desc:"Witness the iconic Big Five and the world-famous Great Migration in East Africa's most celebrated reserve. Daily game drives in a 4x4 jeep with an expert guide.",img:"https://images.unsplash.com/photo-1516426122078-c23e76319801?w=700&q=80",features:["Daily Game Drives","Budget Lodge","Park Fees Included","Airport Transfer","Expert Guide"]},
+    {id:2,name:"Amboseli & Kilimanjaro Views",dest:"Amboseli, Kenya",dur:"3 Days / 2 Nights",price:650,tier:"budget",desc:"Marvel at massive elephant herds grazing beneath the snow-capped peak of Africa's highest mountain. The most photogenic safari in Kenya.",img:"https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=700&q=80",features:["Elephant Herds","Kilimanjaro Views","Maasai Village","Budget Accommodation","Park Fees"]},
+    {id:3,name:"Kenya Family Safari",dest:"Mara & Nakuru, Kenya",dur:"7 Days / 6 Nights",price:1850,tier:"midrange",desc:"The perfect family adventure — combine Masai Mara game drives with flamingo spectacles at Lake Nakuru and a Giraffe Centre visit in Nairobi.",img:"https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=700&q=80",features:["Masai Mara","Lake Nakuru","Giraffe Centre","Family Lodge","Private Vehicle"]},
+    {id:4,name:"Tanzania Serengeti Circuit",dest:"Serengeti & Ngorongoro, Tanzania",dur:"8 Days / 7 Nights",price:2400,tier:"midrange",desc:"Cross into Tanzania for the full East African classic — the Serengeti's endless plains, the volcanic Eden of Ngorongoro Crater, and Tarangire's baobab forests.",img:"https://images.unsplash.com/photo-1514220734073-10c3a0a30cbc?w=700&q=80",features:["Serengeti NP","Ngorongoro Crater","Tarangire NP","Mid-Range Lodges","All Meals"]},
+    {id:5,name:"Kenya Luxury Lodge Safari",dest:"Masai Mara & Amboseli",dur:"6 Days / 5 Nights",price:3200,tier:"luxury",desc:"Indulge in the finest lodges and tented camps the Mara has to offer. Private game drives at dawn, sundowners on the plains, gourmet bush dinners under the stars.",img:"https://images.unsplash.com/photo-1520262494112-9fe481d36ec3?w=700&q=80",features:["Luxury Lodges","Private Game Drives","Bush Dinner","All-Inclusive","Champagne Breakfast"]},
+    {id:6,name:"Uganda Mountain Gorilla Trek",dest:"Bwindi, Uganda",dur:"5 Days / 4 Nights",price:3500,tier:"luxury",desc:"A once-in-a-lifetime face-to-face encounter with endangered mountain gorillas in the ancient Bwindi Impenetrable Forest. Includes gorilla permit.",img:"https://images.unsplash.com/photo-1585468273881-fc8df8e1fc2f?w=700&q=80",features:["Gorilla Permit","Expert Trackers","Jungle Lodge","Cultural Visit","4WD Transfer"]},
+    {id:7,name:"Diani Beach & Bush Combo",dest:"Masai Mara + Diani Beach",dur:"8 Days / 7 Nights",price:2100,tier:"beach",desc:"The ultimate African holiday — three nights on safari in the Mara followed by a blissful beach retreat on the white sands of Diani, Kenya's most pristine beach.",img:"https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=700&q=80",features:["Masai Mara Safari","Diani Beach","Snorkelling","Beach Hotel","Internal Flights"]},
+    {id:8,name:"Tsavo, Nakuru & Lakes Circuit",dest:"Tsavo & Rift Valley, Kenya",dur:"6 Days / 5 Nights",price:1200,tier:"midrange",desc:"Explore Tsavo's legendary red elephants, watch thousands of flamingos at Lake Nakuru, and relax on a boat safari at serene Lake Naivasha.",img:"https://images.unsplash.com/photo-1609340017004-f38b29bed3e6?w=700&q=80",features:["Tsavo East & West","Lake Nakuru","Lake Naivasha","Boat Safari","Flamingos"]},
+    {id:9,name:"Nairobi Day Excursion",dest:"Nairobi, Kenya",dur:"Full Day",price:180,tier:"budget",desc:"An affordable Nairobi adventure — Nairobi National Park game drive, David Sheldrick Elephant Orphanage, Giraffe Centre, and Karen Blixen Museum.",img:"https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=700&q=80",features:["National Park","Giraffe Centre","Elephant Orphanage","City Tour","Lunch Included"]},
+    {id:10,name:"Mount Kenya Trekking",dest:"Mt. Kenya & Aberdares",dur:"6 Days / 5 Nights",price:1600,tier:"trekking",desc:"Summit Point Lenana (4,985m) on Africa's second-highest mountain. Acclimatisation huts, experienced mountain guides, and stunning glacial scenery.",img:"https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700&q=80",features:["Acclimatisation Huts","Mountain Guide","All Meals","Porter Service","Summit Certificate"]},
+    {id:11,name:"Hot Air Balloon Masai Mara",dest:"Masai Mara, Kenya",dur:"2 Days / 1 Night",price:750,tier:"luxury",desc:"Drift silently above the golden Mara at sunrise watching wildebeest herds from your balloon basket, followed by a champagne bush breakfast on the plains.",img:"https://images.unsplash.com/photo-1504173010664-32509107de50?w=700&q=80",features:["Balloon Flight","Champagne Breakfast","1-Night Lodge","Game Drive","Sunset Drinks"]},
+    {id:12,name:"Samburu & Masai Mara Safari",dest:"Samburu & Masai Mara, Kenya",dur:"7 Days / 6 Nights",price:1950,tier:"midrange",desc:"Discover Samburu's unique 'Special Five' — reticulated giraffe, Grevy's zebra, Somali ostrich, beisa oryx — then head south to the legendary Masai Mara.",img:"https://images.unsplash.com/photo-1600132806608-231446b2e7af?w=700&q=80",features:["Samburu NR","Masai Mara","Special Five","Mid-Range Camps","Expert Local Guide"]},
+  ],
+  destinations:[
+    {id:1,name:"Masai Mara",country:"Kenya",img:"https://images.unsplash.com/photo-1516426122078-c23e76319801?w=900&q=80",tours:12,size:"large"},
+    {id:2,name:"Amboseli",country:"Kenya",img:"https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=700&q=80",tours:6,size:"wide"},
+    {id:3,name:"Serengeti",country:"Tanzania",img:"https://images.unsplash.com/photo-1514220734073-10c3a0a30cbc?w=700&q=80",tours:8,size:"md"},
+    {id:4,name:"Ngorongoro Crater",country:"Tanzania",img:"https://images.unsplash.com/photo-1567647753830-de3fe7ce9f28?w=700&q=80",tours:5,size:"md"},
+    {id:5,name:"Tsavo",country:"Kenya",img:"https://images.unsplash.com/photo-1609340017004-f38b29bed3e6?w=700&q=80",tours:7,size:"sm"},
+    {id:6,name:"Diani Beach",country:"Kenya",img:"https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=700&q=80",tours:4,size:"sm"},
+    {id:7,name:"Lake Nakuru",country:"Kenya",img:"https://images.unsplash.com/photo-1559563458-527698bf5295?w=700&q=80",tours:5,size:"md"},
+    {id:8,name:"Bwindi",country:"Uganda",img:"https://images.unsplash.com/photo-1585468273881-fc8df8e1fc2f?w=700&q=80",tours:3,size:"sm"},
+  ],
+  experiences:[
+    {id:1,icon:"bi-binoculars-fill",title:"Game Drives",desc:"Morning and evening game drives in open 4x4 vehicles with expert naturalist guides who know every inch of the savannah."},
+    {id:2,icon:"bi-balloon-fill",title:"Hot Air Balloon Safaris",desc:"Glide over the Masai Mara at sunrise for a bird's-eye view of the Great Migration — champagne bush breakfast awaits on landing."},
+    {id:3,icon:"bi-person-walking",title:"Bush Walking Safaris",desc:"Leave the vehicle behind and walk alongside a Maasai ranger through the wilderness, discovering the bush at ground level."},
+    {id:4,icon:"bi-mountain",title:"Mountain Trekking",desc:"Conquer Mt. Kenya (Point Lenana, 4,985m) or Mt. Kilimanjaro with our certified mountain guides and full logistical support."},
+    {id:5,icon:"bi-water",title:"Beach & Water Sports",desc:"Relax on Diani Beach's pristine white sands, snorkel in coral reefs, or dive in the warm Indian Ocean after your safari."},
+    {id:6,icon:"bi-people-fill",title:"Cultural Village Visits",desc:"Immerse in authentic Maasai culture — traditional dances, beadwork, and insights into Kenya's rich tribal heritage."},
+    {id:7,icon:"bi-camera-fill",title:"Photography Safaris",desc:"Specialized photo safari vehicles with roof hatches and bean bags. Our guides know the best light, angles, and locations."},
+    {id:8,icon:"bi-tree-fill",title:"Conservation Experiences",desc:"Behind-the-scenes access to wildlife conservancies, elephant orphanages, and anti-poaching ranger patrols."},
+  ],
+  testimonials:[
+    {id:1,name:"Sarah M.",origin:"United States",rating:5,safari:"Masai Mara 5-Day Safari",text:"My experience with Kairi Tours was nothing short of extraordinary. From the professionalism of their staff to the unparalleled beauty of Kenya's wilderness, every moment exceeded my wildest dreams. Elizabeth, our safari consultant, was an absolute gem.",initials:"SM"},
+    {id:2,name:"James & Family",origin:"United Kingdom",rating:5,safari:"Kenya 7-Day Family Safari",text:"We just finished a 5-day family safari and it was incredible! Everything was smooth and well-organized. Our guide Joseph was fantastic with the kids. In Maasai Mara, we saw lions, elephants, and even a rhino — the kids were absolutely thrilled!",initials:"JF"},
+    {id:3,name:"Pieter van D.",origin:"Netherlands",rating:5,safari:"Tanzania Serengeti Circuit",text:"I had an amazing trip to Maasai Mara with Kairi Tours. From the moment I booked, their professional and attentive team made the process seamless. The knowledge of the guide was exceptional. Truly the best travel agency in Kenya.",initials:"PD"},
+    {id:4,name:"Akiko T.",origin:"Japan",rating:5,safari:"Uganda Gorilla Trek",text:"Coming face to face with mountain gorillas in Bwindi was the most humbling experience of my life. Kairi's attention to every detail — from permits to the jungle camp — was flawless. I will travel with them again and again.",initials:"AT"},
+    {id:5,name:"Maria G.",origin:"Spain",rating:5,safari:"Kenya Luxury Lodge Safari",text:"The luxury lodge safari exceeded every expectation. Private game drives, candlelit bush dinners, the staff knew us by name by day two. This is what Africa dreams are made of. Kairi delivers pure magic.",initials:"MG"},
+    {id:6,name:"David K.",origin:"Australia",rating:5,safari:"Hot Air Balloon Safari",text:"Floating over the Mara at sunrise, watching the wildebeest herds below — it's an image I'll carry forever. Kairi organized every detail perfectly. The champagne breakfast on the plains afterwards was the perfect finale.",initials:"DK"},
+  ],
+  blogPosts:[
+    {id:1,title:"The Great Wildebeest Migration: Complete 2026 Guide",cat:"Wildlife",author:"Kairi Team",date:"2026-03-15",img:"https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=700&q=80",excerpt:"The largest wildlife spectacle on Earth — everything you need to know about witnessing the Great Migration in the Masai Mara, month by month."},
+    {id:2,title:"Top 10 Safari Tips for First-Time Kenya Visitors",cat:"Travel Tips",author:"Joseph N.",date:"2026-02-28",img:"https://images.unsplash.com/photo-1516426122078-c23e76319801?w=700&q=80",excerpt:"Planning your first Kenya safari? Our expert guides share insider knowledge that will transform your adventure from good to truly unforgettable."},
+    {id:3,title:"Ngorongoro Crater: Africa's Natural Wonder Explained",cat:"Destinations",author:"Kairi Team",date:"2026-01-20",img:"https://images.unsplash.com/photo-1567647753830-de3fe7ce9f28?w=700&q=80",excerpt:"Descend into the world's largest intact volcanic caldera and discover why the Ngorongoro Crater is called 'Africa's Eden.'"},
+    {id:4,title:"Diani Beach: The Perfect Safari & Sun Combo",cat:"Destinations",author:"Sarah K.",date:"2026-04-02",img:"https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=700&q=80",excerpt:"After the thrill of game drives, Kenya's coast calls. Here's why Diani Beach is the perfect finale to any East African safari adventure."},
+    {id:5,title:"Kenya Park Fees 2026: What You Need to Know",cat:"Travel Tips",author:"Kairi Team",date:"2026-04-10",img:"https://images.unsplash.com/photo-1609340017004-f38b29bed3e6?w=700&q=80",excerpt:"Updated 2026 park entry fees for Masai Mara, Amboseli, Tsavo and more. How to budget smartly for your Kenya safari."},
+    {id:6,title:"Mountain Gorillas of Bwindi: An Unforgettable Encounter",cat:"Wildlife",author:"David N.",date:"2026-03-28",img:"https://images.unsplash.com/photo-1585468273881-fc8df8e1fc2f?w=700&q=80",excerpt:"Everything you need to know about gorilla trekking in Uganda's Bwindi Impenetrable Forest — permits, what to expect, and how to prepare."},
+  ],
+  gallery:[
+    {url:"https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80",caption:"Great Migration, Masai Mara"},
+    {url:"https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=80",caption:"Elephants below Kilimanjaro, Amboseli"},
+    {url:"https://images.unsplash.com/photo-1535941339077-2dd1c7963098?w=800&q=80",caption:"Lioness at dawn, Masai Mara"},
+    {url:"https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800&q=80",caption:"Wildebeest crossing the Mara River"},
+    {url:"https://images.unsplash.com/photo-1520262494112-9fe481d36ec3?w=800&q=80",caption:"Leopard in acacia tree"},
+    {url:"https://images.unsplash.com/photo-1504173010664-32509107de50?w=800&q=80",caption:"Hot Air Balloon at sunrise"},
+    {url:"https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",caption:"Diani Beach, South Coast Kenya"},
+    {url:"https://images.unsplash.com/photo-1585468273881-fc8df8e1fc2f?w=800&q=80",caption:"Mountain Gorilla, Bwindi Uganda"},
+    {url:"https://images.unsplash.com/photo-1514220734073-10c3a0a30cbc?w=800&q=80",caption:"Zebras, Serengeti Tanzania"},
+    {url:"https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",caption:"Mount Kenya summit panorama"},
+    {url:"https://images.unsplash.com/photo-1559563458-527698bf5295?w=800&q=80",caption:"Flamingos, Lake Nakuru"},
+    {url:"https://images.unsplash.com/photo-1600132806608-231446b2e7af?w=800&q=80",caption:"Reticulated Giraffe, Samburu"},
+  ],
+  bookings:[
+    {id:1001,name:"Sarah Mitchell",email:"sarah.m@gmail.com",pkg:"Masai Mara Classic Safari",travelers:2,date:"2026-05-15",status:"confirmed",total:"$1,700",country:"USA"},
+    {id:1002,name:"James & Family",email:"jfamily@outlook.co.uk",pkg:"Kenya Family Safari",travelers:4,date:"2026-06-02",status:"confirmed",total:"$7,400",country:"UK"},
+    {id:1003,name:"Pieter van Dijk",email:"pieter@nl.com",pkg:"Tanzania Serengeti Circuit",travelers:2,date:"2026-07-18",status:"pending",total:"$4,800",country:"Netherlands"},
+    {id:1004,name:"Akiko Tanaka",email:"akiko@jp.com",pkg:"Uganda Gorilla Trek",travelers:1,date:"2026-08-05",status:"confirmed",total:"$3,500",country:"Japan"},
+    {id:1005,name:"Carlos Rodriguez",email:"carlos@es.com",pkg:"Kenya Luxury Lodge",travelers:2,date:"2026-04-25",status:"pending",total:"$6,400",country:"Spain"},
+    {id:1006,name:"Emma Thompson",email:"emma.t@au.com",pkg:"Beach & Bush Combo",travelers:2,date:"2026-09-10",status:"cancelled",total:"$4,200",country:"Australia"},
+  ],
+  adminPass: 'kairi2024',
+  whyItems:[
+    {num:"01",title:"40+ Years of Excellence",desc:"Founded in 1984, we are Kenya's oldest indigenously owned tour operator. Four decades of trust, relationships, and unmatched local expertise."},
+    {num:"02",title:"JKIA Airport Office",desc:"The only tour company with a 24-hour office at JKIA Arrivals Terminal 1A. We're ready to welcome you the moment you land."},
+    {num:"03",title:"Expert Local Guides",desc:"Multilingual naturalists and wildlife experts who grew up in these landscapes. Their passion and knowledge transform every game drive."},
+    {num:"04",title:"Tailor-Made Itineraries",desc:"No two safaris are identical. Every trip is crafted around your budget, schedule, interests, and travel style — completely flexible."},
+    {num:"05",title:"Best Price Guarantee",desc:"Our long-standing relationships with lodges, camps, and parks mean we can offer the most competitive rates in East Africa."},
+    {num:"06",title:"Sustainable Tourism",desc:"We partner with eco-lodges and conservation organisations, ensuring that travel benefits local communities and wildlife protection."},
+  ]
+};
+
+// ─── STATE ──────────────────────────────────────────────────
+let S = JSON.parse(localStorage.getItem('kairi_v2_state') || 'null') || deepClone(DEFAULTS);
+function deepClone(o){return JSON.parse(JSON.stringify(o))}
+function saveState(){try{localStorage.setItem('kairi_v2_state',JSON.stringify(S))}catch(e){}}
+
+// ─── NAVBAR ──────────────────────────────────────────────────
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('solid',window.scrollY>60);
+});
+function scrollToSection(sel){document.querySelector(sel)?.scrollIntoView({behavior:'smooth'})}
+function toggleMobileNav(){
+  document.getElementById('mobileNav').classList.toggle('open');
+  document.getElementById('navOverlay').classList.toggle('show');
+}
+
+// ─── SCROLL REVEAL ──────────────────────────────────────────
+const revObs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:0.12});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>revObs.observe(el));
+
+// ─── HERO SLIDER ────────────────────────────────────────────
+let heroIdx = 0, heroTimer;
+function renderHero(){
+  const imgs = S.heroImages;
+  const slidesEl = document.getElementById('heroSlides');
+  slidesEl.innerHTML = imgs.map((img,i)=>`
+    <div class="hero-slide ${i===0?'active':''}" style="background-image:url('${img.url}')" data-idx="${i}"></div>
+  `).join('');
+  const dotsEl = document.getElementById('heroDots');
+  dotsEl.innerHTML = imgs.map((_,i)=>`<div class="hdot ${i===0?'active':''}" onclick="setHeroSlide(${i})"></div>`).join('');
+  // Update content
+  const hc = S.heroContent;
+  document.getElementById('heroTitle').innerHTML = `${hc.line1}<span class="line-gold">${hc.line2}</span><span class="line-small">${hc.tagline}</span>`;
+  document.getElementById('heroDesc').textContent = hc.desc;
+}
+function setHeroSlide(idx){
+  heroIdx = idx;
+  document.querySelectorAll('.hero-slide').forEach((s,i)=>s.classList.toggle('active',i===idx));
+  document.querySelectorAll('.hdot').forEach((d,i)=>d.classList.toggle('active',i===idx));
+  clearInterval(heroTimer);
+  heroTimer = setInterval(()=>setHeroSlide((heroIdx+1)%S.heroImages.length), 6000);
+}
+function startHeroSlider(){
+  renderHero();
+  heroTimer = setInterval(()=>setHeroSlide((heroIdx+1)%S.heroImages.length), 6000);
+}
+
+// ─── TICKER ─────────────────────────────────────────────────
+function renderTicker(){
+  const items = ['Masai Mara Safaris','Hot Air Balloon','Beach Packages','Mountain Trekking','Gorilla Trekking','Luxury Lodges','Budget Safaris','Serengeti Circuit','Family Safaris','Expert Guides'];
+  const track = document.getElementById('tickerTrack');
+  const html = items.map(t=>`<span class="ticker-item">${t}<span class="ticker-sep">✦</span></span>`).join('');
+  track.innerHTML = html + html; // duplicate for seamless loop
+}
+
+// ─── PACKAGES ───────────────────────────────────────────────
+let activeFilter = 'all';
+function getTierBadge(t){
+  const map = {budget:'tier-budget',midrange:'tier-midrange',luxury:'tier-luxury',beach:'tier-beach',trekking:'tier-beach'};
+  const label = {budget:'Budget',midrange:'Mid-Range',luxury:'Luxury',beach:'Beach',trekking:'Trekking'};
+  return `<span class="pkg-tier ${map[t]||'tier-budget'}">${label[t]||t}</span>`;
+}
+function renderPackages(){
+  const g = document.getElementById('pkgsGrid');
+  const pkgs = activeFilter==='all'?S.packages:S.packages.filter(p=>p.tier===activeFilter);
+  if(!pkgs.length){g.innerHTML='<div style="color:var(--muted2);text-align:center;padding:60px 0;grid-column:1/-1">No packages in this category yet.</div>';return;}
+  g.innerHTML = pkgs.map((p,i)=>`
+    <div class="pkg-card reveal" style="transition-delay:${(i%3)*0.08}s">
+      <div class="pkg-img-wrap">
+        <img class="pkg-img" src="${p.img||'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=700&q=80'}" alt="${p.name}" loading="lazy">
+        ${getTierBadge(p.tier)}
+        <span class="pkg-dur">${p.dur}</span>
+        <button class="pkg-wish" onclick="this.classList.toggle('active')" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-location"><i class="bi bi-geo-alt-fill"></i>${p.dest}</div>
+        <div class="pkg-name">${p.name}</div>
+        <p class="pkg-desc">${p.desc}</p>
+        <div class="pkg-feats">${(p.features||[]).map(f=>`<span class="pkg-feat"><i class="bi bi-check-circle-fill"></i>${f}</span>`).join('')}</div>
+        <div class="pkg-footer">
+          <div>
+            <span class="pkg-from">From</span>
+            <div class="pkg-price">$${Number(p.price).toLocaleString()}</div>
+            <span class="pkg-per">/person</span>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="scrollToSection('#booking')">Book Now</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+  document.querySelectorAll('.pkg-card.reveal').forEach(el=>revObs.observe(el));
+  // Update booking select
+  const sel = document.getElementById('bookingPkg');
+  sel.innerHTML = '<option value="">Select a package...</option>' + S.packages.map(p=>`<option value="${p.name}">${p.name} — $${p.price.toLocaleString()}/person</option>`).join('');
+}
+document.getElementById('pkgFilters').addEventListener('click',e=>{
+  const btn = e.target.closest('.pkg-filter');
+  if(!btn)return;
+  document.querySelectorAll('.pkg-filter').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  activeFilter = btn.dataset.filter;
+  renderPackages();
+});
+
+// ─── DESTINATIONS ───────────────────────────────────────────
+function getSizeClass(size){
+  if(size==='large')return 'lg';
+  if(size==='wide')return 'wide';
+  if(size==='tall')return 'tall';
+  return 'md';
+}
+function renderDestinations(){
+  const el = document.getElementById('destMosaic');
+  el.innerHTML = S.destinations.map(d=>`
+    <div class="dest-tile ${getSizeClass(d.size)} reveal">
+      <img src="${d.img}" alt="${d.name}" loading="lazy">
+      <div class="dest-veil"></div>
+      <div class="dest-arrow"><i class="bi bi-arrow-right"></i></div>
+      <div class="dest-info">
+        <div class="dest-ctry">${d.country}</div>
+        <div class="dest-name">${d.name}</div>
+        <div class="dest-count">${d.tours} Safari Packages</div>
+      </div>
+    </div>
+  `).join('');
+  document.querySelectorAll('.dest-tile.reveal').forEach(el=>revObs.observe(el));
+}
+
+// ─── EXPERIENCES ────────────────────────────────────────────
+function renderExperiences(){
+  const g = document.getElementById('expGrid');
+  g.innerHTML = S.experiences.map((e,i)=>`
+    <div class="exp-card reveal" style="transition-delay:${(i%4)*0.1}s">
+      <div class="exp-icon-wrap"><i class="bi ${e.icon}"></i></div>
+      <div class="exp-title">${e.title}</div>
+      <p class="exp-desc">${e.desc}</p>
+    </div>
+  `).join('');
+  document.querySelectorAll('.exp-card.reveal').forEach(el=>revObs.observe(el));
+}
+
+// ─── GALLERY ────────────────────────────────────────────────
+let swiperInstance = null;
+function renderGallery(){
+  const wrap = document.getElementById('gallerySwiperWrap');
+  wrap.innerHTML = S.gallery.map(img=>`
+    <div class="swiper-slide">
+      <img src="${img.url}" alt="${img.caption}" loading="lazy">
+      <div class="gallery-caption">${img.caption}</div>
+    </div>
+  `).join('');
+  if(swiperInstance)swiperInstance.destroy();
+  swiperInstance = new Swiper('#gallerySwiper',{
+    slidesPerView:1.2,
+    spaceBetween:12,
+    loop:true,
+    pagination:{el:'.swiper-pagination',clickable:true},
+    breakpoints:{640:{slidesPerView:2.2},1024:{slidesPerView:3.4},1400:{slidesPerView:4.2}},
+    autoplay:{delay:3500,disableOnInteraction:false}
+  });
+}
+
+// ─── WHY KAIRI ──────────────────────────────────────────────
+function renderWhy(){
+  const g = document.getElementById('whyGrid');
+  g.innerHTML = S.whyItems.map((w,i)=>`
+    <div class="why-card reveal" style="transition-delay:${(i%3)*0.1}s">
+      <div class="why-num">${w.num}</div>
+      <div class="why-title">${w.title}</div>
+      <p class="why-desc">${w.desc}</p>
+    </div>
+  `).join('');
+  document.querySelectorAll('.why-card.reveal').forEach(el=>revObs.observe(el));
+}
+
+// ─── TESTIMONIALS ───────────────────────────────────────────
+let testiPage = 0;
+function renderTestimonials(){
+  const g = document.getElementById('testiGrid');
+  const perPage = window.innerWidth>=1024?3:window.innerWidth>=640?2:1;
+  const start = testiPage*perPage;
+  const shown = S.testimonials.slice(start,start+perPage);
+  g.innerHTML = shown.map((t,i)=>`
+    <div class="testi-card reveal" style="transition-delay:${i*0.1}s">
+      <div class="testi-stars">${'★'.repeat(t.rating)}</div>
+      <div class="testi-text">"${t.text}"</div>
+      <div class="testi-author">
+        <div class="testi-avatar">${t.initials||t.name.slice(0,2).toUpperCase()}</div>
+        <div>
+          <div class="testi-name">${t.name}</div>
+          <div class="testi-origin">${t.origin}</div>
+          <div class="testi-safari">${t.safari}</div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+  const pages = Math.ceil(S.testimonials.length/perPage);
+  document.getElementById('testiDots').innerHTML = Array.from({length:pages},(_,i)=>`
+    <div class="testi-dot ${i===testiPage?'active':''}" onclick="setTestiPage(${i})"></div>
+  `).join('');
+  document.querySelectorAll('.testi-card.reveal').forEach(el=>revObs.observe(el));
+}
+function setTestiPage(p){testiPage=p;renderTestimonials()}
+window.addEventListener('resize',renderTestimonials);
+
+// ─── BLOG ───────────────────────────────────────────────────
+function renderBlog(){
+  const g = document.getElementById('blogGrid');
+  g.innerHTML = S.blogPosts.slice(0,6).map((b,i)=>`
+    <div class="blog-card reveal" style="transition-delay:${(i%3)*0.1}s">
+      <div class="blog-img-wrap">
+        <img src="${b.img||'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80'}" alt="${b.title}" loading="lazy">
+        <span class="blog-cat-label">${b.cat}</span>
+      </div>
+      <div class="blog-body">
+        <div class="blog-title">${b.title}</div>
+        <p class="blog-excerpt">${b.excerpt}</p>
+        <div class="blog-meta">
+          <span><i class="bi bi-person"></i>${b.author}</span>
+          <span><i class="bi bi-calendar3"></i>${new Date(b.date).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}</span>
+        </div>
+        <a href="#" class="blog-readmore">Read More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  `).join('');
+  document.querySelectorAll('.blog-card.reveal').forEach(el=>revObs.observe(el));
+}
+
+// ─── BOOKING FORM ───────────────────────────────────────────
+function submitBooking(e){
+  e.preventDefault();
+  const inputs = e.target.querySelectorAll('input,select,textarea');
+  const booking = {
+    id: Date.now(),
+    name:`${inputs[0].value} ${inputs[1].value}`.trim(),
+    email:inputs[2].value,
+    phone:inputs[3].value||'',
+    pkg:inputs[4].value,
+    travelers:inputs[5].value,
+    date:inputs[6].value||'TBD',
+    budget:inputs[7].value||'',
+    message:inputs[8].value||'',
+    status:'pending',
+    total:'TBD',
+    country:''
+  };
+  S.bookings.unshift(booking);
+  saveState();
+  updateDashStats();
+  e.target.reset();
+  notify('Your enquiry has been submitted! Our team will contact you within 24 hours.','success');
+}
+function subscribeNewsletter(e){e.preventDefault();notify('Welcome! You\'ll receive our next safari update soon.','success');e.target.reset()}
+
+// ─── NOTIFICATIONS ──────────────────────────────────────────
+let notifTimer;
+function notify(msg,type='success'){
+  const n=document.getElementById('notif');
+  const ico = {success:'bi-check-circle-fill',error:'bi-x-circle-fill',info:'bi-info-circle-fill'};
+  n.className = `show ${type}`;
+  n.querySelector('.notif-icon').className = `notif-icon bi ${ico[type]||ico.success}`;
+  n.querySelector('.notif-text').textContent = msg;
+  clearTimeout(notifTimer);
+  notifTimer = setTimeout(()=>n.classList.remove('show'),5000);
+}
+function closeNotif(){document.getElementById('notif').classList.remove('show')}
+
+// ─── LOGIN ──────────────────────────────────────────────────
+function showLogin(){document.getElementById('loginModal').classList.add('show')}
+function closeLogin(){document.getElementById('loginModal').classList.remove('show')}
+function doLogin(){
+  const u=document.getElementById('loginUser').value.trim();
+  const p=document.getElementById('loginPass').value;
+  if(u==='admin'&&p===S.adminPass){
+    closeLogin();
+    openAdmin();
+  } else {
+    notify('Invalid credentials.','error');
+    document.getElementById('loginPass').style.borderColor='rgba(231,76,60,0.5)';
+    setTimeout(()=>document.getElementById('loginPass').style.borderColor='',2000);
+  }
+}
+document.getElementById('loginPass').addEventListener('keydown',e=>{if(e.key==='Enter')doLogin()});
+
+// ─── ADMIN ──────────────────────────────────────────────────
+function openAdmin(){
+  document.getElementById('adminPanel').classList.add('show');
+  updateDashStats();
+  renderAdminBookings();
+  renderAdminPackages();
+  renderAdminDestinations();
+  renderAdminExperiences();
+  renderAdminTestimonials();
+  renderAdminBlog();
+  renderAdminGallery();
+  renderHeroImgManager();
+}
+function closeAdmin(){document.getElementById('adminPanel').classList.remove('show')}
+function showAdminSection(id,link){
+  document.querySelectorAll('.admin-section').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.admin-nav-item').forEach(a=>a.classList.remove('active'));
+  if(link)link.classList.add('active');
+  const titles={dashboard:'Dashboard','hero-admin':'Hero Section','packages-admin':'Packages','bookings-admin':'Bookings','destinations-admin':'Destinations','experiences-admin':'Experiences','testimonials-admin':'Testimonials','blog-admin':'Blog Posts','gallery-admin':'Gallery','settings-admin':'Settings'};
+  document.getElementById('adminPageTitle').textContent=titles[id]||id;
+}
+
+// ─── DASHBOARD ──────────────────────────────────────────────
+function updateDashStats(){
+  document.getElementById('d-total-bookings').textContent=S.bookings.length;
+  document.getElementById('d-total-pkgs').textContent=S.packages.length;
+  document.getElementById('d-total-testi').textContent=S.testimonials.length;
+  // Recent bookings table
+  const t=document.getElementById('d-bookings-table');
+  const recent=S.bookings.slice(0,5);
+  t.innerHTML=`<thead><tr><th>Guest</th><th>Package</th><th>Date</th><th>Status</th><th>Actions</th></tr></thead><tbody>${recent.map(b=>`
+    <tr>
+      <td>${b.name}</td>
+      <td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${b.pkg}</td>
+      <td>${b.date}</td>
+      <td><span class="status-badge s-${b.status}">${b.status}</span></td>
+      <td><select class="a-select" style="padding:4px 8px;font-size:11px;width:100px" onchange="updateBookingStatus(${b.id},this.value)">
+        <option ${b.status==='pending'?'selected':''} value="pending">Pending</option>
+        <option ${b.status==='confirmed'?'selected':''} value="confirmed">Confirmed</option>
+        <option ${b.status==='cancelled'?'selected':''} value="cancelled">Cancelled</option>
+      </select></td>
+    </tr>
+  `).join('')}</tbody>`;
+}
+
+// ─── ADMIN PACKAGES ─────────────────────────────────────────
+let editingPkgId = null;
+function renderAdminPackages(){
+  const t=document.getElementById('pkgsAdminTable');
+  t.innerHTML=`<thead><tr><th>Name</th><th>Destination</th><th>Tier</th><th>Price</th><th>Duration</th><th>Actions</th></tr></thead><tbody>${S.packages.map(p=>`
+    <tr>
+      <td><div style="display:flex;align-items:center;gap:10px"><img src="${p.img||''}" style="width:44px;height:32px;object-fit:cover;border-radius:1px;flex-shrink:0"><div style="color:var(--cream);font-weight:500">${p.name}</div></div></td>
+      <td>${p.dest}</td>
+      <td>${getTierBadge(p.tier)}</td>
+      <td style="color:var(--gold);font-family:var(--font-serif)">$${Number(p.price).toLocaleString()}</td>
+      <td>${p.dur}</td>
+      <td style="display:flex;gap:6px">
+        <button class="a-btn a-btn-outline a-btn-sm" onclick="editPkg(${p.id})"><i class="bi bi-pencil"></i></button>
+        <button class="a-btn a-btn-danger a-btn-sm" onclick="deletePkg(${p.id})"><i class="bi bi-trash"></i></button>
+      </td>
+    </tr>
+  `).join('')}</tbody>`;
+}
+function openPkgModal(id=null){
+  editingPkgId=null;
+  document.getElementById('pkgModalTitle').textContent='Add Safari Package';
+  ['pm-name','pm-dest','pm-dur','pm-img'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('pm-price').value='';
+  document.getElementById('pm-desc').value='';
+  document.getElementById('pm-feats').value='';
+  document.getElementById('pm-tier').value='midrange';
+  document.getElementById('pm-img-preview').classList.remove('show');
+  document.getElementById('pkgModal').classList.add('show');
+}
+function editPkg(id){
+  const p=S.packages.find(x=>x.id===id);
+  if(!p)return;
+  editingPkgId=id;
+  document.getElementById('pkgModalTitle').textContent='Edit Package';
+  document.getElementById('pm-name').value=p.name;
+  document.getElementById('pm-dest').value=p.dest;
+  document.getElementById('pm-dur').value=p.dur;
+  document.getElementById('pm-price').value=p.price;
+  document.getElementById('pm-tier').value=p.tier;
+  document.getElementById('pm-desc').value=p.desc||'';
+  document.getElementById('pm-feats').value=(p.features||[]).join(', ');
+  document.getElementById('pm-img').value=p.img||'';
+  previewImg('pm-img','pm-img-preview');
+  document.getElementById('pkgModal').classList.add('show');
+}
+function closePkgModal(){document.getElementById('pkgModal').classList.remove('show')}
+function savePkg(){
+  const name=document.getElementById('pm-name').value.trim();
+  if(!name){notify('Package name is required.','error');return;}
+  const pkg={
+    id:editingPkgId||Date.now(),
+    name,
+    dest:document.getElementById('pm-dest').value,
+    dur:document.getElementById('pm-dur').value,
+    price:parseFloat(document.getElementById('pm-price').value)||0,
+    tier:document.getElementById('pm-tier').value,
+    desc:document.getElementById('pm-desc').value,
+    features:document.getElementById('pm-feats').value.split(',').map(f=>f.trim()).filter(Boolean),
+    img:document.getElementById('pm-img').value||'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=700&q=80'
+  };
+  if(editingPkgId){const i=S.packages.findIndex(p=>p.id===editingPkgId);if(i>-1)S.packages[i]=pkg;}
+  else S.packages.unshift(pkg);
+  saveState();renderPackages();renderAdminPackages();closePkgModal();notify(editingPkgId?'Package updated!':'Package added!','success');editingPkgId=null;
+}
+function deletePkg(id){
+  if(!confirm('Remove this package from the website?'))return;
+  S.packages=S.packages.filter(p=>p.id!==id);
+  saveState();renderPackages();renderAdminPackages();notify('Package removed.','info');
+}
+
+// ─── ADMIN BOOKINGS ─────────────────────────────────────────
+function renderAdminBookings(){
+  const search=(document.getElementById('bookingSearch')?.value||'').toLowerCase();
+  const bkgs=S.bookings.filter(b=>!search||b.name.toLowerCase().includes(search)||b.email?.toLowerCase().includes(search));
+  const t=document.getElementById('bookingsAdminTable');
+  t.innerHTML=`<thead><tr><th>#ID</th><th>Guest Name</th><th>Email</th><th>Package</th><th>Travellers</th><th>Date</th><th>Status</th><th>Total</th><th>Actions</th></tr></thead><tbody>${bkgs.map(b=>`
+    <tr>
+      <td style="color:var(--muted2)">#${b.id}</td>
+      <td style="color:var(--cream);font-weight:500">${b.name}</td>
+      <td style="color:var(--muted2)">${b.email||'—'}</td>
+      <td style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${b.pkg}</td>
+      <td>${b.travelers||'—'}</td>
+      <td>${b.date}</td>
+      <td><span class="status-badge s-${b.status}">${b.status}</span></td>
+      <td style="color:var(--gold)">${b.total}</td>
+      <td style="display:flex;gap:4px;flex-wrap:wrap">
+        <select class="a-select" style="padding:4px 8px;font-size:10px;width:95px" onchange="updateBookingStatus(${b.id},this.value)">
+          <option ${b.status==='pending'?'selected':''} value="pending">Pending</option>
+          <option ${b.status==='confirmed'?'selected':''} value="confirmed">Confirmed</option>
+          <option ${b.status==='cancelled'?'selected':''} value="cancelled">Cancelled</option>
+        </select>
+        <button class="a-btn a-btn-danger a-btn-sm" onclick="deleteBooking(${b.id})"><i class="bi bi-trash"></i></button>
+      </td>
+    </tr>
+  `).join('')}</tbody>`;
+}
+function updateBookingStatus(id,status){
+  const b=S.bookings.find(x=>x.id===id);
+  if(b){b.status=status;saveState();renderAdminBookings();updateDashStats();notify(`Booking #${id} updated to ${status}.`,'success')}
+}
+function deleteBooking(id){
+  if(!confirm('Delete this booking?'))return;
+  S.bookings=S.bookings.filter(b=>b.id!==id);
+  saveState();renderAdminBookings();updateDashStats();notify('Booking deleted.','info');
+}
+function exportCSV(){
+  const rows=[['ID','Name','Email','Package','Travellers','Date','Status','Total'],...S.bookings.map(b=>[b.id,b.name,b.email||'',b.pkg,b.travelers||'',b.date,b.status,b.total])];
+  const csv=rows.map(r=>r.map(c=>`"${c}"`).join(',')).join('\n');
+  const a=document.createElement('a');a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);a.download='kairi_bookings.csv';a.click();
+  notify('CSV exported!','success');
+}
+
+// ─── ADMIN DESTINATIONS ─────────────────────────────────────
+let editingDestId = null;
+function renderAdminDestinations(){
+  const g=document.getElementById('destAdminGrid');
+  g.innerHTML=S.destinations.map(d=>`
+    <div class="a-card" style="padding:14px">
+      <img src="${d.img}" alt="${d.name}" style="width:100%;height:110px;object-fit:cover;border-radius:1px;margin-bottom:10px">
+      <div style="color:var(--cream);font-weight:600;font-size:13px">${d.name}</div>
+      <div style="color:var(--muted2);font-size:11px;margin:3px 0">${d.country} · ${d.tours} Tours</div>
+      <div style="color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:1px">Size: ${d.size}</div>
+      <div style="display:flex;gap:6px;margin-top:10px">
+        <button class="a-btn a-btn-outline a-btn-sm" style="flex:1" onclick="editDest(${d.id})"><i class="bi bi-pencil"></i></button>
+        <button class="a-btn a-btn-danger a-btn-sm" onclick="deleteDest(${d.id})"><i class="bi bi-trash"></i></button>
+      </div>
+    </div>
+  `).join('');
+}
+function openDestModal(){
+  editingDestId=null;
+  document.getElementById('destModalTitle').textContent='Add Destination';
+  ['dm-name','dm-country','dm-img'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('dm-tours').value='';
+  document.getElementById('dm-size').value='normal';
+  document.getElementById('dm-img-preview').classList.remove('show');
+  document.getElementById('destModal').classList.add('show');
+}
+function editDest(id){
+  const d=S.destinations.find(x=>x.id===id);if(!d)return;
+  editingDestId=id;
+  document.getElementById('destModalTitle').textContent='Edit Destination';
+  document.getElementById('dm-name').value=d.name;
+  document.getElementById('dm-country').value=d.country;
+  document.getElementById('dm-tours').value=d.tours;
+  document.getElementById('dm-size').value=d.size;
+  document.getElementById('dm-img').value=d.img||'';
+  previewImg('dm-img','dm-img-preview');
+  document.getElementById('destModal').classList.add('show');
+}
+function closeDestModal(){document.getElementById('destModal').classList.remove('show')}
+function saveDest(){
+  const name=document.getElementById('dm-name').value.trim();
+  if(!name){notify('Destination name required.','error');return;}
+  const dest={
+    id:editingDestId||Date.now(),
+    name,country:document.getElementById('dm-country').value,
+    tours:parseInt(document.getElementById('dm-tours').value)||0,
+    size:document.getElementById('dm-size').value,
+    img:document.getElementById('dm-img').value||'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=700&q=80'
+  };
+  if(editingDestId){const i=S.destinations.findIndex(d=>d.id===editingDestId);if(i>-1)S.destinations[i]=dest;}
+  else S.destinations.push(dest);
+  saveState();renderDestinations();renderAdminDestinations();closeDestModal();notify(editingDestId?'Destination updated!':'Destination added!','success');editingDestId=null;
+}
+function deleteDest(id){
+  if(!confirm('Remove this destination?'))return;
+  S.destinations=S.destinations.filter(d=>d.id!==id);
+  saveState();renderDestinations();renderAdminDestinations();notify('Destination removed.','info');
+}
+
+// ─── ADMIN EXPERIENCES ───────────────────────────────────────
+let editingExpId = null;
+function renderAdminExperiences(){
+  const t=document.getElementById('expAdminTable');
+  t.innerHTML=`<thead><tr><th>Icon</th><th>Title</th><th>Description</th><th>Actions</th></tr></thead><tbody>${S.experiences.map(e=>`
+    <tr>
+      <td><i class="bi ${e.icon}" style="font-size:18px;color:var(--gold)"></i></td>
+      <td style="color:var(--cream);font-weight:500">${e.title}</td>
+      <td style="color:var(--muted2);max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${e.desc}</td>
+      <td style="display:flex;gap:6px">
+        <button class="a-btn a-btn-outline a-btn-sm" onclick="editExp(${e.id})"><i class="bi bi-pencil"></i></button>
+        <button class="a-btn a-btn-danger a-btn-sm" onclick="deleteExp(${e.id})"><i class="bi bi-trash"></i></button>
+      </td>
+    </tr>
+  `).join('')}</tbody>`;
+}
+function openExpModal(){
+  editingExpId=null;
+  document.getElementById('expModalTitle').textContent='Add Experience';
+  ['em-title','em-icon','em-desc'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('expModal').classList.add('show');
+}
+function editExp(id){
+  const e=S.experiences.find(x=>x.id===id);if(!e)return;
+  editingExpId=id;
+  document.getElementById('expModalTitle').textContent='Edit Experience';
+  document.getElementById('em-title').value=e.title;
+  document.getElementById('em-icon').value=e.icon;
+  document.getElementById('em-desc').value=e.desc;
+  document.getElementById('expModal').classList.add('show');
+}
+function closeExpModal(){document.getElementById('expModal').classList.remove('show')}
+function saveExp(){
+  const title=document.getElementById('em-title').value.trim();
+  if(!title){notify('Title required.','error');return;}
+  const exp={id:editingExpId||Date.now(),title,icon:document.getElementById('em-icon').value||'bi-compass-fill',desc:document.getElementById('em-desc').value};
+  if(editingExpId){const i=S.experiences.findIndex(e=>e.id===editingExpId);if(i>-1)S.experiences[i]=exp;}
+  else S.experiences.push(exp);
+  saveState();renderExperiences();renderAdminExperiences();closeExpModal();notify(editingExpId?'Experience updated!':'Experience added!','success');editingExpId=null;
+}
+function deleteExp(id){
+  if(!confirm('Remove this experience?'))return;
+  S.experiences=S.experiences.filter(e=>e.id!==id);
+  saveState();renderExperiences();renderAdminExperiences();notify('Experience removed.','info');
+}
+
+// ─── ADMIN TESTIMONIALS ─────────────────────────────────────
+function renderAdminTestimonials(){
+  const t=document.getElementById('testiAdminTable');
+  t.innerHTML=`<thead><tr><th>Guest</th><th>Origin</th><th>Rating</th><th>Safari</th><th>Actions</th></tr></thead><tbody>${S.testimonials.map(t=>`
+    <tr>
+      <td><div style="color:var(--cream);font-weight:500">${t.name}</div><div style="color:var(--muted2);font-size:11px;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${t.text}</div></td>
+      <td>${t.origin}</td>
+      <td style="color:var(--gold)">${'★'.repeat(t.rating)}</td>
+      <td style="font-size:11px">${t.safari}</td>
+      <td><button class="a-btn a-btn-danger a-btn-sm" onclick="deleteTesti(${t.id})"><i class="bi bi-trash"></i></button></td>
+    </tr>
+  `).join('')}</tbody>`;
+}
+function openTestiModal(){document.getElementById('testiModal').classList.add('show')}
+function closeTestiModal(){document.getElementById('testiModal').classList.remove('show')}
+function saveTesti(){
+  const name=document.getElementById('tm-name').value.trim();
+  if(!name){notify('Name required.','error');return;}
+  const t={id:Date.now(),name,origin:document.getElementById('tm-origin').value,rating:parseInt(document.getElementById('tm-rating').value)||5,safari:document.getElementById('tm-safari').value,text:document.getElementById('tm-text').value,initials:name.slice(0,2).toUpperCase()};
+  S.testimonials.push(t);
+  saveState();renderTestimonials();renderAdminTestimonials();closeTestiModal();notify('Testimonial added!','success');
+  ['tm-name','tm-origin','tm-safari','tm-text'].forEach(id=>document.getElementById(id).value='');
+}
+function deleteTesti(id){
+  if(!confirm('Delete this testimonial?'))return;
+  S.testimonials=S.testimonials.filter(t=>t.id!==id);
+  saveState();renderTestimonials();renderAdminTestimonials();notify('Testimonial removed.','info');
+}
+
+// ─── ADMIN BLOG ─────────────────────────────────────────────
+let editingBlogId = null;
+function renderAdminBlog(){
+  const t=document.getElementById('blogAdminTable');
+  t.innerHTML=`<thead><tr><th>Title</th><th>Category</th><th>Author</th><th>Date</th><th>Actions</th></tr></thead><tbody>${S.blogPosts.map(b=>`
+    <tr>
+      <td><div style="display:flex;align-items:center;gap:10px"><img src="${b.img||''}" style="width:44px;height:32px;object-fit:cover;border-radius:1px"><div style="color:var(--cream);font-weight:500;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${b.title}</div></div></td>
+      <td><span class="status-badge s-confirmed">${b.cat}</span></td>
+      <td>${b.author}</td>
+      <td>${new Date(b.date).toLocaleDateString()}</td>
+      <td style="display:flex;gap:6px">
+        <button class="a-btn a-btn-outline a-btn-sm" onclick="editBlog(${b.id})"><i class="bi bi-pencil"></i></button>
+        <button class="a-btn a-btn-danger a-btn-sm" onclick="deleteBlog(${b.id})"><i class="bi bi-trash"></i></button>
+      </td>
+    </tr>
+  `).join('')}</tbody>`;
+}
+function openBlogModal(){
+  editingBlogId=null;
+  document.getElementById('blogModalTitle').textContent='New Blog Post';
+  ['bm-title','bm-author','bm-excerpt','bm-img'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('bm-author').value='Kairi Team';
+  document.getElementById('bm-img-preview').classList.remove('show');
+  document.getElementById('blogModal').classList.add('show');
+}
+function editBlog(id){
+  const b=S.blogPosts.find(x=>x.id===id);if(!b)return;
+  editingBlogId=id;
+  document.getElementById('blogModalTitle').textContent='Edit Blog Post';
+  document.getElementById('bm-title').value=b.title;
+  document.getElementById('bm-cat').value=b.cat;
+  document.getElementById('bm-author').value=b.author;
+  document.getElementById('bm-excerpt').value=b.excerpt;
+  document.getElementById('bm-img').value=b.img||'';
+  previewImg('bm-img','bm-img-preview');
+  document.getElementById('blogModal').classList.add('show');
+}
+function closeBlogModal(){document.getElementById('blogModal').classList.remove('show')}
+function saveBlog(){
+  const title=document.getElementById('bm-title').value.trim();
+  if(!title){notify('Title required.','error');return;}
+  const post={id:editingBlogId||Date.now(),title,cat:document.getElementById('bm-cat').value,author:document.getElementById('bm-author').value||'Kairi Team',date:new Date().toISOString().split('T')[0],excerpt:document.getElementById('bm-excerpt').value,img:document.getElementById('bm-img').value||'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=700&q=80'};
+  if(editingBlogId){const i=S.blogPosts.findIndex(b=>b.id===editingBlogId);if(i>-1)S.blogPosts[i]=post;}
+  else S.blogPosts.unshift(post);
+  saveState();renderBlog();renderAdminBlog();closeBlogModal();notify(editingBlogId?'Post updated!':'Post published!','success');editingBlogId=null;
+}
+function deleteBlog(id){
+  if(!confirm('Delete this post?'))return;
+  S.blogPosts=S.blogPosts.filter(b=>b.id!==id);
+  saveState();renderBlog();renderAdminBlog();notify('Post deleted.','info');
+}
+
+// ─── ADMIN GALLERY ──────────────────────────────────────────
+function renderAdminGallery(){
+  const g=document.getElementById('galleryAdminGrid');
+  g.innerHTML=S.gallery.map((img,i)=>`
+    <div class="gallery-admin-item">
+      <img src="${img.url}" alt="${img.caption}" loading="lazy">
+      <div class="gallery-admin-item-actions">
+        <span style="font-size:10px;color:var(--cream);text-align:center;padding:0 6px">${img.caption}</span>
+        <button class="a-btn a-btn-danger a-btn-sm" onclick="deleteGalleryImg(${i})"><i class="bi bi-trash"></i></button>
+      </div>
+    </div>
+  `).join('');
+}
+function addGalleryImg(){
+  const url=document.getElementById('galleryAddUrl').value.trim();
+  const caption=document.getElementById('galleryAddCaption').value.trim()||'Safari Photo';
+  if(!url){notify('Image URL required.','error');return;}
+  S.gallery.push({url,caption});
+  saveState();renderGallery();renderAdminGallery();
+  document.getElementById('galleryAddUrl').value='';document.getElementById('galleryAddCaption').value='';
+  notify('Photo added to gallery!','success');
+}
+function deleteGalleryImg(idx){
+  if(!confirm('Remove this photo from gallery?'))return;
+  S.gallery.splice(idx,1);
+  saveState();renderGallery();renderAdminGallery();notify('Photo removed.','info');
+}
+
+// ─── HERO ADMIN ─────────────────────────────────────────────
+function renderHeroImgManager(){
+  const el=document.getElementById('heroImgManager');
+  el.innerHTML=S.heroImages.map((img,i)=>`
+    <div class="hero-img-thumb ${i===0?'active':''}" onclick="setHeroThumbActive(${i})">
+      <img src="${img.url}" alt="${img.caption}">
+      <button class="remove-img" onclick="removeHeroImg(event,${i})"><i class="bi bi-x"></i></button>
+    </div>
+  `).join('');
+  // populate content inputs
+  const hc=S.heroContent;
+  document.getElementById('heroTitleLine1').value=hc.line1;
+  document.getElementById('heroTitleLine2').value=hc.line2;
+  document.getElementById('heroTagline').value=hc.tagline;
+  document.getElementById('heroDescText').value=hc.desc;
+}
+function setHeroThumbActive(i){document.querySelectorAll('.hero-img-thumb').forEach((t,j)=>t.classList.toggle('active',j===i))}
+function addHeroImage(){
+  const url=document.getElementById('heroImgUrl').value.trim();
+  const caption=document.getElementById('heroImgCaption').value.trim()||'Safari scene';
+  if(!url){notify('Image URL required.','error');return;}
+  S.heroImages.push({url,caption});
+  saveState();startHeroSlider();renderHeroImgManager();
+  document.getElementById('heroImgUrl').value='';document.getElementById('heroImgCaption').value='';
+  notify('Hero image added!','success');
+}
+function removeHeroImg(e,i){
+  e.stopPropagation();
+  if(S.heroImages.length<=1){notify('At least one hero image is required.','error');return;}
+  S.heroImages.splice(i,1);
+  saveState();startHeroSlider();renderHeroImgManager();notify('Hero image removed.','info');
+}
+function saveHeroContent(){
+  S.heroContent={
+    line1:document.getElementById('heroTitleLine1').value||'Africa Awaits',
+    line2:document.getElementById('heroTitleLine2').value||'Your Wild Heart',
+    tagline:document.getElementById('heroTagline').value||'Karibu to East Africa',
+    desc:document.getElementById('heroDescText').value||''
+  };
+  saveState();renderHero();notify('Hero content saved!','success');
+}
+
+// ─── SETTINGS ───────────────────────────────────────────────
+function saveSettings(){
+  // Hero content update from settings panel too
+  const h1=document.getElementById('s-hero1').value;
+  const h2=document.getElementById('s-hero2').value;
+  const hd=document.getElementById('s-heroDesc').value;
+  if(h1)S.heroContent.line1=h1;
+  if(h2)S.heroContent.line2=h2;
+  if(hd)S.heroContent.desc=hd;
+  saveState();renderHero();
+  notify('Settings saved!','success');
+}
+function changeAdminPass(){
+  const np=document.getElementById('newAdminPass').value;
+  const cp=document.getElementById('confirmAdminPass').value;
+  if(!np){notify('Enter a new password.','error');return;}
+  if(np!==cp){notify('Passwords do not match.','error');return;}
+  S.adminPass=np;saveState();notify('Admin password updated!','success');
+  document.getElementById('newAdminPass').value='';document.getElementById('confirmAdminPass').value='';
+}
+function exportAllData(){
+  const dataStr=JSON.stringify(S,null,2);
+  const a=document.createElement('a');a.href='data:application/json;charset=utf-8,'+encodeURIComponent(dataStr);a.download='kairi_cms_data.json';a.click();
+  notify('Data exported!','success');
+}
+function resetData(){
+  if(!confirm('Reset ALL data to defaults? This cannot be undone!'))return;
+  S=deepClone(DEFAULTS);saveState();
+  renderAll();notify('Data reset to defaults.','info');
+  // Re-open admin to refresh
+  openAdmin();
+}
+
+// ─── IMAGE PREVIEW ──────────────────────────────────────────
+function previewImg(inputId,previewId){
+  const url=document.getElementById(inputId).value.trim();
+  const img=document.getElementById(previewId);
+  if(url){img.src=url;img.classList.add('show');}
+  else img.classList.remove('show');
+}
+
+// ─── CLOSE MODALS ON BACKDROP ───────────────────────────────
+['pkgModal','destModal','expModal','testiModal','blogModal'].forEach(id=>{
+  document.getElementById(id).addEventListener('click',e=>{
+    if(e.target.id===id)document.getElementById(id).classList.remove('show');
+  });
+});
+
+// ─── RENDER ALL ─────────────────────────────────────────────
+function renderAll(){
+  startHeroSlider();
+  renderTicker();
+  renderPackages();
+  renderDestinations();
+  renderExperiences();
+  renderGallery();
+  renderWhy();
+  renderTestimonials();
+  renderBlog();
+}
+
+// ─── INIT ───────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', renderAll);
+</script>
+</body>
+</html>
